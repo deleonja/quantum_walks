@@ -7,6 +7,9 @@ Coin::usage = "Coin[ket]. ket={c(m,p), m , p}. Haddamard operator for now.
 Coin[rho,2]. rho={Psi(m,p,n,q),m,p,n,q}.";
 
 
+CoinMatrix::usage = "CoinMatrix[Theta, t]. Theta = Pi/4 es Haddamard con fase relativa, t: pasos temporales DTQW.";
+
+
 Shift::usage = "Shift[ket]. ket={c(m,p), m , p}. Unbounded shift operator.
 Shift[rho, 2]. rho={Psi(m,p,n,q),m,p,n,q}.";
 
@@ -28,6 +31,11 @@ DensityMatrix::usage = "DensityMatrix[psi] returns {{Psi(m1,p1,n1,q1),m1,p1,n1,q
 
 
 Begin["`Private`"];
+
+
+(*We are using the coin operator of Eq. (4) of arXiv:2311.15801. 
+This form of the coin has the advantage that always introduce a relative phase between states |0> and |1>*)
+CoinMatrix[\[Theta]_,t_]:=N[KroneckerProduct[{{Cos[\[Theta]],-I Sin[\[Theta]]},{-I Sin[\[Theta]],Cos[\[Theta]]}},IdentityMatrix[2*t+1]]]
 
 
 Coin[ket_]:=Which[#[[2]]==0,{{#[[1]]/Sqrt[2.],0,#[[3]]},{#[[1]]/Sqrt[2.],1,#[[3]]}},#[[2]]==1,{{#[[1]]/Sqrt[2.],0,#[[3]]},{-#[[1]]/Sqrt[2.],1,#[[3]]}}]&[ket]
