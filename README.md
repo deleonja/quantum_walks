@@ -1,6 +1,8 @@
 # To-do
 ## A&M
-- asimilar las funciones que están en el paquete QuantumWalks.wl
+- con las rutinas del paquete QuantumWalks.wl hacer la gráfica de la distribución de
+probabilidad del caminante del póster. HAcerlo para las rutinas que toman por 
+input kets, y después con las rutinas que toman por input matrices de densidad
 - crear un paquete con sus funciones
 
 ## JA: 
