@@ -9,7 +9,8 @@ InitializeQW::usage="Initialize the sizes of the quantum walk 'cuz idk what else
 JAToVec::usage="Transform JA notation to vector states."
 
 
-Shift::usage="Apply the shift operator."
+Shift::usage="Apply the shift operator
+otra definicion."
 
 
 MakeCoin::usage="Create the coin operator."
@@ -39,6 +40,9 @@ MakeCoin[r_,\[Theta]_,\[Phi]_]:=CoinMat={{Sqrt[r],Sqrt[1-r]Exp[I \[Theta]]},{Sqr
 
 
 Shift[state_]:=ShiftMat . state
+
+
+Shift[state_,2]:=ShiftMat . rho . ShiftMat
 
 
 Coin[state_]:=KroneckerProduct[CoinMat,posB] . state
