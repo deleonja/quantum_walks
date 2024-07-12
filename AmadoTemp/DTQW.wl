@@ -25,6 +25,9 @@ MakeCoin::usage="Given an specification it will build the appropriate operator (
 MakeShift::usage="Given an specification it will build the appropriate shift operator (incomplete)."
 
 
+MakeUnitary::usage="Given shift ...."
+
+
 VectorState::usage="VectorState[{{\!\(\*SubscriptBox[
 StyleBox[\"a\", \"TI\"], 
 StyleBox[\"1\", \"TI\"]]\),\!\(\*SubscriptBox[
@@ -75,6 +78,12 @@ StyleBox[\"n\", \"TI\"]\) steps in the DTQW with initial DMatrixState \!\(\*
 StyleBox[\"state\", \"TI\"]\) using the Coin and Shift operators created by their respective functions."
 
 
+DTQW2::usage="DTQW2[state] alternative definition"
+
+
+DTQW2wDecoherence::usage="DTQW2wDecoherence[state...] m\[AAcute]s cositas"
+
+
 Begin["`Private`"];
 
 
@@ -96,6 +105,9 @@ MakeShift[]:=ShiftMat=KroneckerProduct[coinB[[1]] . coinB[[1]]\[ConjugateTranspo
 KroneckerProduct[coinB[[2]] . coinB[[2]]\[ConjugateTranspose],Sum[posB[[i-1]] . posB[[i]]\[ConjugateTranspose],{i,2,posSize}]]
 
 
+MakeUnitary[]:=UnitaryMat=ShiftMat . KroneckerProduct[CoinMat,IdentityMatrix[posSize]];
+
+
 (* VectorState related functions *)
 
 
@@ -106,6 +118,21 @@ VectorStateToArray[state_VectorState?ValidVectorStateQ]:=Total[#[[1]] KroneckerP
 
 
 DTQW[state_VectorState,n_Integer]:=MatrixPower[ShiftMat . KroneckerProduct[CoinMat,IdentityMatrix[posSize]],n] . N[VectorStateToArray[state]] (* Message advising the limit *)
+
+
+DTQW2[state_VectorState,n_Integer]:=Module[
+{U=ShiftMat . KroneckerProduct[CoinMat,IdentityMatrix[posSize]]},
+Nest[Dot[U,#]&,N[VectorStateToArray[state]],n]
+]
+
+
+DTQW2wDecoherence[state_VectorState,p_?NumericQ,n_Integer]:=Module[
+{U=UnitaryMat,K1,K2,rho},
+K1=Sqrt[p] U;
+K2=Sqrt[1-p] KroneckerProduct[PauliMatrix[3],IdentityMatrix[posSize]] . U;
+rho=# . #\[ConjugateTranspose]&@N[VectorStateToArray[state]];
+Nest[Chop[K1 . # . K1\[ConjugateTranspose]+K2 . # . K2\[ConjugateTranspose]]&,rho,n]
+]
 
 
 (* DMatrixState related functions *)
