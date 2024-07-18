@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    233188,       5180]
-NotebookOptionsPosition[    225051,       5035]
-NotebookOutlinePosition[    225443,       5051]
-CellTagsIndexPosition[    225400,       5048]
+NotebookDataLength[    250532,       5568]
+NotebookOptionsPosition[    242393,       5423]
+NotebookOutlinePosition[    242785,       5439]
+CellTagsIndexPosition[    242742,       5436]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -2886,37 +2886,42 @@ Cell[BoxData[
      RowBox[{"{", 
       RowBox[{
        RowBox[{"1", "/", 
-        RowBox[{"Sqrt", "[", "2.", "]"}]}], ",", "0", ",", "0"}], "}"}], ",", 
-     
+        RowBox[{"Sqrt", "[", "2.", "]"}]}], ",", "0", ",", 
+       RowBox[{"-", "9"}]}], "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
        RowBox[{"\[ImaginaryI]", "/", 
-        RowBox[{"Sqrt", "[", "2.", "]"}]}], ",", "1", ",", "0"}], "}"}]}], 
+        RowBox[{"Sqrt", "[", "2.", "]"}]}], ",", "1", ",", "10"}], "}"}]}], 
     "}"}], "]"}]}]], "Input",
  CellChangeTimes->{{3.929732217738296*^9, 3.929732220122099*^9}, {
    3.9297326982733583`*^9, 3.929732705022567*^9}, {3.929732825994439*^9, 
    3.9297328330424213`*^9}, {3.929733038240468*^9, 3.929733040995473*^9}, {
    3.929733078242259*^9, 3.929733086708666*^9}, {3.929756186456044*^9, 
-   3.9297561884876347`*^9}, 3.9297884657817717`*^9, 3.9297885019698772`*^9},
+   3.9297561884876347`*^9}, 3.9297884657817717`*^9, 3.9297885019698772`*^9, {
+   3.929796148825194*^9, 3.929796164604347*^9}, {3.929796320294325*^9, 
+   3.929796321101429*^9}, {3.929796397521903*^9, 3.9297963996882467`*^9}},
  CellLabel->
-  "In[128]:=",ExpressionUUID->"ee454770-bd5d-48d0-a362-52fcb77114cc"],
+  "In[157]:=",ExpressionUUID->"ee454770-bd5d-48d0-a362-52fcb77114cc"],
 
 Cell[BoxData[
  RowBox[{"VectorState", "[", 
   RowBox[{"{", 
    RowBox[{
     RowBox[{"{", 
-     RowBox[{"0.7071067811865475`", ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"0.7071067811865475`", ",", "0", ",", 
+      RowBox[{"-", "9"}]}], "}"}], ",", 
     RowBox[{"{", 
      RowBox[{
       RowBox[{"0.`", "\[VeryThinSpace]", "+", 
        RowBox[{"0.7071067811865475`", " ", "\[ImaginaryI]"}]}], ",", "1", ",",
-       "0"}], "}"}]}], "}"}], "]"}]], "Output",
- CellChangeTimes->{3.929789675869523*^9, 3.9297897640529346`*^9, 
-  3.929789813724085*^9, 3.929789932048506*^9, 3.929790281472166*^9, 
-  3.929792648202242*^9, 3.92979442707987*^9},
+       "10"}], "}"}]}], "}"}], "]"}]], "Output",
+ CellChangeTimes->{
+  3.929789675869523*^9, 3.9297897640529346`*^9, 3.929789813724085*^9, 
+   3.929789932048506*^9, 3.929790281472166*^9, 3.929792648202242*^9, 
+   3.92979442707987*^9, {3.929796158337117*^9, 3.929796165237609*^9}, 
+   3.929796323635995*^9, 3.929796403477976*^9},
  CellLabel->
-  "Out[128]=",ExpressionUUID->"ec6f08cf-454b-4899-8a82-8289869f1586"]
+  "Out[157]=",ExpressionUUID->"7e85423a-51e7-48ba-a3cc-bb5ba4ccf4ab"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -2926,7 +2931,7 @@ Cell[BoxData[
     RowBox[{"time", ",", "rho"}], "}"}], "=", 
    RowBox[{
     RowBox[{"DTQW2wDecoherence", "[", 
-     RowBox[{"state", ",", "0.99", ",", "100"}], "]"}], "//", 
+     RowBox[{"state", ",", "0.99", ",", "50"}], "]"}], "//", 
     "AbsoluteTiming"}]}], ";"}]], "Input",
  CellChangeTimes->{{3.929748073675618*^9, 3.929748080053939*^9}, {
    3.9297491529227858`*^9, 3.9297491565651417`*^9}, {3.929750411886354*^9, 
@@ -2937,9 +2942,10 @@ Cell[BoxData[
    3.9297585455162907`*^9, 3.929758557858411*^9}, 3.92975960146049*^9, 
    3.9297896216537247`*^9, {3.9297925663057833`*^9, 3.929792611612105*^9}, 
    3.92979288612684*^9, 3.929794216056756*^9, {3.929794303400182*^9, 
-   3.92979433340783*^9}, 3.929794461482916*^9},
+   3.92979433340783*^9}, 3.929794461482916*^9, {3.929796180140717*^9, 
+   3.92979618098024*^9}},
  CellLabel->
-  "In[135]:=",ExpressionUUID->"0f3307af-c74b-4740-8873-8bc6e39997d4"],
+  "In[158]:=",ExpressionUUID->"0f3307af-c74b-4740-8873-8bc6e39997d4"],
 
 Cell[CellGroupData[{
 
@@ -2949,19 +2955,20 @@ Cell[BoxData[
  CellChangeTimes->{{3.9297596098616743`*^9, 3.9297596102661753`*^9}, {
   3.929759688038134*^9, 3.9297596978103733`*^9}},
  CellLabel->
-  "In[136]:=",ExpressionUUID->"a8aebd30-883d-4ac6-bc04-3d2b5822a5c7"],
+  "In[159]:=",ExpressionUUID->"a8aebd30-883d-4ac6-bc04-3d2b5822a5c7"],
 
 Cell[BoxData[
- TemplateBox[{"24.558114`", "\"s\"", "seconds", "\"Seconds\""},
+ TemplateBox[{"14.800396`", "\"s\"", "seconds", "\"Seconds\""},
   "Quantity"]], "Output",
  CellChangeTimes->{
   3.929789678027821*^9, 3.929789830084528*^9, 3.929790297471855*^9, 
    3.929792676949839*^9, 3.929792906305311*^9, 3.929793664495049*^9, 
    3.92979376541327*^9, 3.9297938128076344`*^9, {3.9297941974472857`*^9, 
    3.929794224137151*^9}, {3.9297943161858377`*^9, 3.9297943418342752`*^9}, 
-   3.929794435326807*^9, 3.929794488579709*^9},
+   3.929794435326807*^9, 3.929794488579709*^9, 3.929796197251161*^9, 
+   3.929796343296666*^9, 3.929796418888968*^9},
  CellLabel->
-  "Out[136]=",ExpressionUUID->"d7846f91-570b-43a7-8c96-633ce636ea0c"]
+  "Out[159]=",ExpressionUUID->"43383062-585a-40fb-96ee-ef6340813b30"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -2974,7 +2981,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.9297516273707523`*^9, 3.929751679278157*^9}, {
   3.929792619758122*^9, 3.929792631203755*^9}},
  CellLabel->
-  "In[137]:=",ExpressionUUID->"dca82899-6ea7-4e08-8b63-9ddfbce976e3"],
+  "In[160]:=",ExpressionUUID->"dca82899-6ea7-4e08-8b63-9ddfbce976e3"],
 
 Cell[BoxData[
  RowBox[{
@@ -2987,7 +2994,7 @@ Cell[BoxData[
   3.929756064681615*^9, 3.929756070335822*^9}, {3.929792635424317*^9, 
   3.9297926367563133`*^9}},
  CellLabel->
-  "In[138]:=",ExpressionUUID->"a26e6d21-2a9a-4389-9799-88f4755e5671"],
+  "In[161]:=",ExpressionUUID->"a26e6d21-2a9a-4389-9799-88f4755e5671"],
 
 Cell[CellGroupData[{
 
@@ -2995,14 +3002,15 @@ Cell[BoxData[
  RowBox[{"Total", "@", "probs"}]], "Input",
  CellChangeTimes->{{3.929751422916051*^9, 3.929751425580145*^9}},
  CellLabel->
-  "In[139]:=",ExpressionUUID->"b7bfafda-c4d5-47dd-a927-329179c194d7"],
+  "In[162]:=",ExpressionUUID->"b7bfafda-c4d5-47dd-a927-329179c194d7"],
 
-Cell[BoxData["0.9999999975612238`"], "Output",
+Cell[BoxData["0.9999999989782182`"], "Output",
  CellChangeTimes->{
   3.92979030639392*^9, 3.929794268113494*^9, {3.929794316728943*^9, 
-   3.929794342240492*^9}, 3.9297944355547247`*^9, 3.929794488764332*^9},
+   3.929794342240492*^9}, 3.9297944355547247`*^9, 3.929794488764332*^9, 
+   3.9297961975070953`*^9, 3.9297963435287113`*^9, 3.9297964191096163`*^9},
  CellLabel->
-  "Out[139]=",ExpressionUUID->"71bc7e30-0e7c-4554-9c76-a22c2d8d074a"]
+  "Out[162]=",ExpressionUUID->"ada4b56b-8b6c-49a5-b056-e261aa4e841f"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -3015,11 +3023,8 @@ Cell[BoxData[
      RowBox[{
       RowBox[{"Range", "[", 
        RowBox[{
-        RowBox[{"-", "100"}], ",", "100", ",", "2"}], "]"}], ",", 
-      RowBox[{"probs", "[", 
-       RowBox[{"[", 
-        RowBox[{";;", ";;", "2"}], "]"}], "]"}]}], "}"}], "\[Transpose]"}], 
-   ",", "\[IndentingNewLine]", 
+        RowBox[{"-", "100"}], ",", "100", ",", "1"}], "]"}], ",", "probs"}], 
+     "}"}], "\[Transpose]"}], ",", "\[IndentingNewLine]", 
    RowBox[{"PlotRange", "->", "All"}], ",", "\[IndentingNewLine]", 
    RowBox[{"Mesh", "->", "All"}], ",", "\[IndentingNewLine]", 
    RowBox[{"Frame", "->", "True"}], ",", "\[IndentingNewLine]", 
@@ -3033,31 +3038,37 @@ Cell[BoxData[
   "]"}]], "Input",
  CellChangeTimes->{{3.929751429131938*^9, 3.9297514559273033`*^9}, {
   3.929751788150861*^9, 3.9297517961069393`*^9}, {3.929794398346816*^9, 
-  3.929794398609166*^9}},
+  3.929794398609166*^9}, {3.929796336459035*^9, 3.929796343128079*^9}},
  CellLabel->
-  "In[140]:=",ExpressionUUID->"b010805e-f496-4f34-a532-418369a3e8b6"],
+  "In[163]:=",ExpressionUUID->"b010805e-f496-4f34-a532-418369a3e8b6"],
 
 Cell[BoxData[
  GraphicsBox[{{}, 
    InterpretationBox[{
      TagBox[GraphicsComplexBox[CompressedData["
-1:eJztlftLFFEUxy9C1A8WkhBri6IwhYpuy2abiG3HVXd9O/tUK8oMrbXAkH7o
-gTCUlqZZhqlJkSz0JkxNCzI4LlG5SmnZT9oSIRRU+Eu6lqY99g50BvoP9sIw
-fPjemblzHt8TU1ZlLQ9hjHl/X3/ugVWC7N8lFVNmCpaKFLqCJadCV7DkUOgO
-7N32Qiy8u8IQ0O04PVYzefR2eYCZHTVSSLPxaS/XbWi+POHpfDPLdRvO6Ko2
-z3/Xbg/oVtzXt+7ZzrS9AWZWXHtrsFb6Vsd1C8aZlzr8G7q4bkFR/f7rDdNN
-rosYM3d4eG6xlesihs+wRPfu45wLUVh4XPG8rJ1zAZbGq19WuI9xzseWMaHu
-wMcLnPPQ7bsuxHlOcM7FVd0L4n3zOc45GBUxOTk6LuvZ2Lajb89G/xnOWbh1
-fUNlx6VTnM3YesTv61ZLnE1Y+XOxK6LuNOdMdFS7alRfTnLOwEHvq02+IXl/
-Ok4UmZZCDtVyNuKnK0ufd/2QOQ3dT7yh98bk5wFDVw+oHMMyGzD2YQuLuCrv
-T8WmRq2xdojHl6WgGLmsi3wkczKuGX2t72mWWY/1ue/e2pZlTkK1UH1tel4+
-vw4/RBkMnph6zlqcDX+w0mlq4JyAI1tcgsd1lnMsOsXhUu+dRs4C9rii9qs1
-cnyjsSO/qSEu8jxnFWrCmvtLfHJ+wlDf73dopi5yZhg/MC61H2yTmZWOpE8l
-mjtlBqqHAX1eBfT90UC/LwA9XyzQ8ycA/T8t0P/XAY1PEtD46YHGNxlo/FOA
-5icVaP4MQPMLQPOfBrQ+jEDrJx1ofWUArb9MoPVpAlq/ZqD1nQW0/rOB9kcO
-0P7JBdpfeUD7Lx9ofxYA7d9CoP0tAul/SQTqDxag/mEB6i9WoP5jBepPNqD+
-ZQPqb3ag/mcH6o8OoP7pAEaWk7KkYFak0BXMihW6glmJklGxn3JwngTnSXCe
-BOdJcJ4E58lf/f/z5Bdfpjpf
+1:eJzt1/9PVXUYB/BH1paU3szRwmBmyBhjQFxFvgnch8u9cL+AXi4I3Myt5Spa
+S9ZMvbImn9BEI4zM5eqX0pWUqy03fsvFM7zRqJbDMYkl/eBq6dqwBqs5V7R2
+P2f5vP+Gc36B132f59x7Pufz+Zw9jz3dG38mg4hOriD672/6SAjdfUi3tgEz
+mMDSBfVgBhNYOqEezGACyw6oBzOYwNIB9WAGE1jaoR7MYAJLHOrBDCawtEE9
+mMEElhjUgxlMeP52yMFmG+Rg0wo52LRADjZRGTofT81ML9alP4hCHpHhy574
+1K+99ekPIpCH5WZW7KI/cNnmYchDUjFa8vD8fbm+9AchyJulbzZU9EtJl82b
+IW+SkgcLMnN7jc2bIA/K1NiJvJvX37R5EPKAHOuuKVs3udfmAcgbpW/1Xt/Q
+4iGbN0LuF78Mn75Uu8/mfokOzFR2zN1Oj5dpEGlNPLf/pVdt3iD58asrUnX7
+0uNhWH6Tnh+nk702Z1n1Q+yb1edm7Xj5ZGHiw9HlYuf76yU1YhK3Jgqt6+Sf
+pZ2Pet537r9WOq+V1+y/0WO9VWbeuT959eQB6xo5eMeTEc45bV0tbeM5Pcd3
+J62r5NMDc9nzpResK6XPO/HQR/c416+QG+9lpD4ZOG+9Rf5eCMjSwQHrcim8
+d/lSU8L5vs2y9NXGP86uP2y9Sepf9P+UlfzA2isP/DUZuWCcvEwyfz781Gsb
+nfstlVO7n8/YefGIdbE8+WWyeuTlt6yL5MRi0Xd39gxaF8qVyXE6HhyxLpBD
+11dFP7/1hnW+5Ly96+vld1+xzpMzs6Ptu75wzt8gC6dS34fmjlrnypWj1Lkn
+OWSdLdcG54c9Vc71smR69JHw+iPHrNfIt/1nXvhs1qlfKZnPxj4eG3RMcnvM
+u3bK64zX7+Pn2vr/XPeEc39Ej7/uWez/P/dpE+vzV7K+3hrW35fF+vdks/69
+uazvZwPr+81jPR75rMergPV4FrIe7yLWz6OY9fMqZf08y1g/by/r+bCJ9XzZ
+zHo+lbOeb1tYz8cK1vO1kvV8rmI936tZr4ca1utlK+v1VMt6vdWxXo/1rNer
+j/V6Zlbr3TDr/aCB1X5hGljtJ+Rntd8YP6v9iBpZ7VemkUkdAVb7nQlAHmS1
+X5og5E2s9lvTBHkzq/3aNEMeYrXfmxDkYVbvCxOGPMLqfWMikEdZva9MFPIW
+Vu870wJ5q7YB0zbIwbQdcjDFtBlswAKmNqgHG7CAKQ71YAMWMLVDPdiABUwd
+UA82YAHTDqgHG7CAqRPqwQYsYOqCerABC5i6oR5swAKmBFrgfG23H4F6tx/R
+9W4/onO3H3H7EbcfcfsRtx9J524/4vYjdx1uPwL1bj/i/PcvGv9UFQ==
        "], {{{}, {}, 
          TagBox[
           {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
@@ -3069,7 +3080,14 @@ BOdJcJ4E58lf/f/z5Bdfpjpf
             50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 
             66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 
             82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 
-            98, 99, 100, 101}]},
+            98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 
+            111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 
+            124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 
+            137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 
+            150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 
+            163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 
+            176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 
+            189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201}]},
           Annotation[#, "Charting`Private`Tag#1"]& ]}, {
          TagBox[
           {RGBColor[1, 0, 0], PointSize[Medium], AbsoluteThickness[2], 
@@ -3079,7 +3097,14 @@ BOdJcJ4E58lf/f/z5Bdfpjpf
             49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 
             65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 
             81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 
-            97, 98, 99, 100, 101}]},
+            97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110,
+             111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 
+            124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 
+            137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 
+            150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 
+            163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 
+            176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 
+            189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201}]},
           Annotation[#, "Charting`Private`Tag#1"]& ], {}}}],
       {"WolframDynamicHighlight", <|
        "Label" -> {"XYLabel"}, "Ball" -> {"InterpolatedBall"}|>}], 
@@ -3089,23 +3114,29 @@ BOdJcJ4E58lf/f/z5Bdfpjpf
        Slot["Meta"], 
        Charting`HighlightActionFunction["DynamicHighlight", 
         GraphicsComplex[CompressedData["
-1:eJztlftLFFEUxy9C1A8WkhBri6IwhYpuy2abiG3HVXd9O/tUK8oMrbXAkH7o
-gTCUlqZZhqlJkSz0JkxNCzI4LlG5SmnZT9oSIRRU+Eu6lqY99g50BvoP9sIw
-fPjemblzHt8TU1ZlLQ9hjHl/X3/ugVWC7N8lFVNmCpaKFLqCJadCV7DkUOgO
-7N32Qiy8u8IQ0O04PVYzefR2eYCZHTVSSLPxaS/XbWi+POHpfDPLdRvO6Ko2
-z3/Xbg/oVtzXt+7ZzrS9AWZWXHtrsFb6Vsd1C8aZlzr8G7q4bkFR/f7rDdNN
-rosYM3d4eG6xlesihs+wRPfu45wLUVh4XPG8rJ1zAZbGq19WuI9xzseWMaHu
-wMcLnPPQ7bsuxHlOcM7FVd0L4n3zOc45GBUxOTk6LuvZ2Lajb89G/xnOWbh1
-fUNlx6VTnM3YesTv61ZLnE1Y+XOxK6LuNOdMdFS7alRfTnLOwEHvq02+IXl/
-Ok4UmZZCDtVyNuKnK0ufd/2QOQ3dT7yh98bk5wFDVw+oHMMyGzD2YQuLuCrv
-T8WmRq2xdojHl6WgGLmsi3wkczKuGX2t72mWWY/1ue/e2pZlTkK1UH1tel4+
-vw4/RBkMnph6zlqcDX+w0mlq4JyAI1tcgsd1lnMsOsXhUu+dRs4C9rii9qs1
-cnyjsSO/qSEu8jxnFWrCmvtLfHJ+wlDf73dopi5yZhg/MC61H2yTmZWOpE8l
-mjtlBqqHAX1eBfT90UC/LwA9XyzQ8ycA/T8t0P/XAY1PEtD46YHGNxlo/FOA
-5icVaP4MQPMLQPOfBrQ+jEDrJx1ofWUArb9MoPVpAlq/ZqD1nQW0/rOB9kcO
-0P7JBdpfeUD7Lx9ofxYA7d9CoP0tAul/SQTqDxag/mEB6i9WoP5jBepPNqD+
-ZQPqb3ag/mcH6o8OoP7pAEaWk7KkYFak0BXMihW6glmJklGxn3JwngTnSXCe
-BOdJcJ4E58lf/f/z5Bdfpjpf
+1:eJzt1/9PVXUYB/BH1paU3szRwmBmyBhjQFxFvgnch8u9cL+AXi4I3Myt5Spa
+S9ZMvbImn9BEI4zM5eqX0pWUqy03fsvFM7zRqJbDMYkl/eBq6dqwBqs5V7R2
+P2f5vP+Gc36B132f59x7Pufz+Zw9jz3dG38mg4hOriD672/6SAjdfUi3tgEz
+mMDSBfVgBhNYOqEezGACyw6oBzOYwNIB9WAGE1jaoR7MYAJLHOrBDCawtEE9
+mMEElhjUgxlMeP52yMFmG+Rg0wo52LRADjZRGTofT81ML9alP4hCHpHhy574
+1K+99ekPIpCH5WZW7KI/cNnmYchDUjFa8vD8fbm+9AchyJulbzZU9EtJl82b
+IW+SkgcLMnN7jc2bIA/K1NiJvJvX37R5EPKAHOuuKVs3udfmAcgbpW/1Xt/Q
+4iGbN0LuF78Mn75Uu8/mfokOzFR2zN1Oj5dpEGlNPLf/pVdt3iD58asrUnX7
+0uNhWH6Tnh+nk702Z1n1Q+yb1edm7Xj5ZGHiw9HlYuf76yU1YhK3Jgqt6+Sf
+pZ2Pet537r9WOq+V1+y/0WO9VWbeuT959eQB6xo5eMeTEc45bV0tbeM5Pcd3
+J62r5NMDc9nzpResK6XPO/HQR/c416+QG+9lpD4ZOG+9Rf5eCMjSwQHrcim8
+d/lSU8L5vs2y9NXGP86uP2y9Sepf9P+UlfzA2isP/DUZuWCcvEwyfz781Gsb
+nfstlVO7n8/YefGIdbE8+WWyeuTlt6yL5MRi0Xd39gxaF8qVyXE6HhyxLpBD
+11dFP7/1hnW+5Ly96+vld1+xzpMzs6Ptu75wzt8gC6dS34fmjlrnypWj1Lkn
+OWSdLdcG54c9Vc71smR69JHw+iPHrNfIt/1nXvhs1qlfKZnPxj4eG3RMcnvM
+u3bK64zX7+Pn2vr/XPeEc39Ej7/uWez/P/dpE+vzV7K+3hrW35fF+vdks/69
+uazvZwPr+81jPR75rMergPV4FrIe7yLWz6OY9fMqZf08y1g/by/r+bCJ9XzZ
+zHo+lbOeb1tYz8cK1vO1kvV8rmI936tZr4ca1utlK+v1VMt6vdWxXo/1rNer
+j/V6Zlbr3TDr/aCB1X5hGljtJ+Rntd8YP6v9iBpZ7VemkUkdAVb7nQlAHmS1
+X5og5E2s9lvTBHkzq/3aNEMeYrXfmxDkYVbvCxOGPMLqfWMikEdZva9MFPIW
+Vu870wJ5q7YB0zbIwbQdcjDFtBlswAKmNqgHG7CAKQ71YAMWMLVDPdiABUwd
+UA82YAHTDqgHG7CAqRPqwQYsYOqCerABC5i6oR5swAKmBFrgfG23H4F6tx/R
+9W4/onO3H3H7EbcfcfsRtx9J524/4vYjdx1uPwL1bj/i/PcvGv9UFQ==
          "], {{{}, {}, 
            Annotation[{
              Hue[0.67, 0.6, 0.6], 
@@ -3121,7 +3152,15 @@ BOdJcJ4E58lf/f/z5Bdfpjpf
               50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 
               66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 
               82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 
-              98, 99, 100, 101}]}, "Charting`Private`Tag#1"]}, {
+              98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 
+              111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123,
+               124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 
+              136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148,
+               149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 
+              161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173,
+               174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 
+              186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198,
+               199, 200, 201}]}, "Charting`Private`Tag#1"]}, {
            Annotation[{
              Directive[
               AbsoluteThickness[2], 
@@ -3134,11 +3173,19 @@ BOdJcJ4E58lf/f/z5Bdfpjpf
                50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65,
                66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81,
                82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97,
-               98, 99, 100, 101}]}, "Charting`Private`Tag#1"], {}}}], <|
+               98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 
+              111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123,
+               124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 
+              136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148,
+               149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 
+              161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173,
+               174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 
+              186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198,
+               199, 200, 201}]}, "Charting`Private`Tag#1"], {}}}], <|
         "HighlightElements" -> <|
           "Label" -> {"XYLabel"}, "Ball" -> {"InterpolatedBall"}|>, 
          "LayoutOptions" -> <|
-          "PlotRange" -> {{-100., 100.}, {0, 0.045460907495047054`}}, 
+          "PlotRange" -> {{-100., 100.}, {0, 0.06712133270909132}}, 
            "Frame" -> {{True, True}, {True, True}}, "AxesOrigin" -> {0, 0}, 
            "ImageSize" -> {600, 600/GoldenRatio}, "Axes" -> {False, False}, 
            "LabelStyle" -> {}, "AspectRatio" -> GoldenRatio^(-1), 
@@ -3162,22 +3209,28 @@ BOdJcJ4E58lf/f/z5Bdfpjpf
                  RGBColor[0.368417, 0.506779, 0.709798], 
                  AbsoluteThickness[2]], 
                 Line[CompressedData["
-1:eJxdlFtIVFEUhjdC1IOFJMTYoCicQkWnYbJJxKblqDPePXNVK8oMrbHAkB66
-IBxKS9Msw9SkKAa6E6amBRksh6i8UFr2pA0RQkGFL+lYmlbM3tE6Gw6Hj/9c
-9l5r/X9MWZW9PIQxVv7n+nsPrhJk/y+lmDJTsVKk0lWsuFW6ihWXSndhz7aX
-cuG9Faag7sTpsZrJo3fKg8ycqFNCms3PerjuQOvlCV/n21muO3DGULV5/od+
-e1C3477edc93pu0NMrPj2tsDtcr3Oq7bMM661BHYcJ3rNpS1H77dtNziuowx
-c4eH5hZbuS5j+AxL9O4+zrkQpYUnFS/K2jkXYGm89lWF9xjnfGwZk+oOfLrA
-OQ+9/htSnO8E51xc1bUgP7Ce45yDURGTk6PjQs/Gth29ezYGznDOwq3rGyo7
-Lp3ibMXWIwF/l1bhbMHKX4vXI+pOc85EV7WnRvP1JOcMHBh+vck/KJ5Px4ki
-y1LIoVrOZvx8ZenLrp+C09D7dDj0/ph4HzB0db/GNSTYhLGPWljEVfF8KjY1
-6s21g7y+LAXlyGVD5GPBybhm9I2xu1mwEetz379zLAtOQq1UfW16XuzfgB+j
-TCZfTD1nPc6GP1zptjRwTsCRLR7J5znLORbd8lDp8N1GzhJ2e6L2a3WivtHY
-kd/UEBd5nrMGdWHNfSV+0Z8wNPYFXLqpi5wZxvePK+0H2wSz0pH0qURrp2Cg
-ehjQ9zVAvx8N9P8S0P3FAt1/AtDz6YGe3wC0PklA62cEWt9koPVPAdqfVKD9
-MwHtLwDtfxrQ+TADnZ90oPOVAXT+MoHOpwXo/FqBzncW0PnPBuqPHKD+yQXq
-rzyg/ssH6s8CoP4tBOpvGYj/FRloPtiA5ocNaL7YgeaPHWg+OYDmlwNovjmB
-5p8TaD66gOanCxhZbsqKilmRSlcxK1bpKmYl//g3gLKd/w==
+1:eJxd1X9MVWUYB/An1paYXq3RwmD+QMYYA+Iq8kvgPlzuvdwfoJcLAjdza7mM
+1pI1U6/MySv+QCOM0uXqn7KVpKtNN/7TxTO80aiWwzGJJf3hbOnasAarOZdY
+u++pnu/ZGPuc73nOue973vc5a17sir2URkTjf//98z91xIX+f0iHtgEzmMDS
+DvVgBhNY2qAezGACyxaoBzOYwNIK9WAGE1haoB7MYAJLDOrBDCawNEM9mMEE
+lijUgxlMeP1myMFmE+Rg0wQ52DRCDjYR6T8fS05OzNWkTkQgD8vAVVds/Jeu
+2tSJMOQhuZMRvez1XbV5CPKglA0VPT2zONuTOhGEvEG6p4IFPxe127wB8oAU
+PZGXnt1lbB6A3C/jwydy7tx82+Z+yH1yrKOqZMXYLpv7IK+X7qW7PP1zB2xe
+D7lXvDJw+kr1bpt7JdI7Wd46fS81X6ZOpCn+8p7XD9q8TnJj1x9J1uxOzYdh
++VU6f5xIdNmcZckP0W+Wnp2y8+WR2dFPhhYKnefXSnLQxO+O5lvXyIP5ratc
+Hzrjr5a2G6VVe253Wm+UyfceT1x/d691ley770oLZZ22rpTmkazO49sT1hXy
++d7pzJnii9bl0u0eferTR537l8ntD9KS53rPW2+Qv2Z9Mr+v17pU8h9buBKI
+O89bL/Nfrf3945WHrNdJ7WvenzISH1m7ZdmfY+GLxslLJP3WoReOrHXGWyyn
+tr+StvXyYetCef7LROXgG+9YF8iJuYLv7u/ss86Xa2MjdNw/aJ0nB24uiVy4
++5Z1rmSd3Pb1wvv7rXPkzNRQy7ZLzvWrZfZU8vvg9FHrbLl2lNp2JvqtM+VG
+38yAq8K5X4ZMDD0TWnn4mPVy+bbnzKtfTDn1iyR9R/Sz4T7HJPeG3U+Ou535
++m3kbHPPHyuec8ZH9Oybrrme/3KPNrG+fhHr+y1n/bwM1r8nk/XvzWY9ntWs
+x5vDej5yWc9XHuv5zGc93wWs30ch6/dVzPp9lrB+327W62Ed6/WynvV6KmW9
+3jawXo9lrNdrOev1XMF6vVey3g9VrPfLRtb7qZr1fqthvR9rWe9XD+v9zKz2
+u2HW/aCOVb8wdaz6CXlZ9RvjZdWPqJ5VvzL1TOrwsep3xge5n1W/NH7IA6z6
+rQlA3sCqX5sGyIOs+r0JQh5i9b0wIcjDrL43Jgx5hNX3ykQgb2T1vTONkDdp
+GzBtghxMmyEHU1SbwQYsYGqGerABC5hiUA82YAFTC9SDDVjA1Ar1YAMWMG2B
+erABC5jaoB5swAKmdqgHG7CAqQPqwQYsYIr/64e3ayth
                  "]]}, "Charting`Private`Tag#1"]}, {
               Annotation[{
                 Directive[
@@ -3185,105 +3238,205 @@ rzyg/ssH6s8CoP4tBOpvGYj/FRloPtiA5ocNaL7YgeaPHWg+OYDmlwNovjmB
                  PointSize[Medium], 
                  RGBColor[1, 0, 0]], {
                  Point[{-100., 0.}], 
+                 Point[{-99., 0.}], 
                  Point[{-98., 0.}], 
+                 Point[{-97., 0.}], 
                  Point[{-96., 0.}], 
+                 Point[{-95., 0.}], 
                  Point[{-94., 0.}], 
+                 Point[{-93., 0.}], 
                  Point[{-92., 0.}], 
+                 Point[{-91., 0.}], 
                  Point[{-90., 0.}], 
+                 Point[{-89., 0.}], 
                  Point[{-88., 0.}], 
+                 Point[{-87., 0.}], 
                  Point[{-86., 0.}], 
-                 Point[{-84., 6.306561120241461*^-10}], 
-                 Point[{-82., 4.034861994422697*^-8}], 
-                 Point[{-80., 1.1185789432835533`*^-6}], 
-                 Point[{-78., 0.000020815448967281545`}], 
-                 Point[{-76., 0.0002590399703279863}], 
-                 Point[{-74., 0.0021063606697765843`}], 
-                 Point[{-72., 0.01072025685387604}], 
-                 Point[{-70., 0.03153966658204716}], 
-                 Point[{-68., 0.045460907495047054`}], 
-                 Point[{-66., 0.020496231122015488`}], 
-                 Point[{-64., 0.006437905787659809}], 
-                 Point[{-62., 0.022837749143032174`}], 
-                 Point[{-60., 0.006258393843106974}], 
-                 Point[{-58., 0.016507752539113133`}], 
-                 Point[{-56., 0.006776962962582596}], 
-                 Point[{-54., 0.014296891662034308`}], 
-                 Point[{-52., 0.006791877965673513}], 
-                 Point[{-50., 0.011701869769621436`}], 
-                 Point[{-48., 0.009562674285132562}], 
-                 Point[{-46., 0.00786530875387318}], 
-                 Point[{-44., 0.01099605581805348}], 
-                 Point[{-42., 0.009239379241244775}], 
-                 Point[{-40., 0.008182273706528569}], 
-                 Point[{-38., 0.009971640953874962}], 
-                 Point[{-36., 0.010243154479964336`}], 
-                 Point[{-34., 0.009187080338363188}], 
-                 Point[{-32., 0.00917307359373478}], 
-                 Point[{-30., 0.010065265016432415`}], 
-                 Point[{-28., 0.010623009939143356`}], 
-                 Point[{-26., 0.010605075949469495`}], 
-                 Point[{-24., 0.01052607010419673}], 
-                 Point[{-22., 0.010740904773830953`}], 
-                 Point[{-20., 0.011216913333798975`}], 
-                 Point[{-18., 0.011783139729018403`}], 
-                 Point[{-16., 0.012341186628427517`}], 
-                 Point[{-14., 0.012897030578780019`}], 
-                 Point[{-12., 0.013509350851713158`}], 
-                 Point[{-10., 0.01424809845393757}], 
-                 Point[{-8., 0.015192341337331425`}], 
-                 Point[{-6., 0.01647319956420306}], 
-                 Point[{-4., 0.01841804885582584}], 
-                 Point[{-2., 0.021894805181025635`}], 
-                 Point[{0., 0.02566215187921317}], 
-                 Point[{2., 0.021894805181025635`}], 
-                 Point[{4., 0.01841804885582584}], 
-                 Point[{6., 0.01647319956420306}], 
-                 Point[{8., 0.015192341337331425`}], 
-                 Point[{10., 0.01424809845393757}], 
-                 Point[{12., 0.013509350851713158`}], 
-                 Point[{14., 0.012897030578780019`}], 
-                 Point[{16., 0.012341186628427517`}], 
-                 Point[{18., 0.011783139729018403`}], 
-                 Point[{20., 0.011216913333798975`}], 
-                 Point[{22., 0.010740904773830953`}], 
-                 Point[{24., 0.01052607010419673}], 
-                 Point[{26., 0.010605075949469495`}], 
-                 Point[{28., 0.010623009939143356`}], 
-                 Point[{30., 0.010065265016432415`}], 
-                 Point[{32., 0.00917307359373478}], 
-                 Point[{34., 0.009187080338363188}], 
-                 Point[{36., 0.010243154479964336`}], 
-                 Point[{38., 0.009971640953874962}], 
-                 Point[{40., 0.008182273706528569}], 
-                 Point[{42., 0.009239379241244775}], 
-                 Point[{44., 0.01099605581805348}], 
-                 Point[{46., 0.00786530875387318}], 
-                 Point[{48., 0.009562674285132562}], 
-                 Point[{50., 0.011701869769621436`}], 
-                 Point[{52., 0.006791877965673513}], 
-                 Point[{54., 0.014296891662034308`}], 
-                 Point[{56., 0.006776962962582596}], 
-                 Point[{58., 0.016507752539113133`}], 
-                 Point[{60., 0.006258393843106974}], 
-                 Point[{62., 0.022837749143032174`}], 
-                 Point[{64., 0.006437905787659809}], 
-                 Point[{66., 0.020496231122015488`}], 
-                 Point[{68., 0.045460907495047054`}], 
-                 Point[{70., 0.03153966658204716}], 
-                 Point[{72., 0.01072025685387604}], 
-                 Point[{74., 0.0021063606697765843`}], 
-                 Point[{76., 0.0002590399703279863}], 
-                 Point[{78., 0.000020815448967281545`}], 
-                 Point[{80., 1.1185789432835533`*^-6}], 
-                 Point[{82., 4.034861994422697*^-8}], 
-                 Point[{84., 6.306561120241461*^-10}], 
+                 Point[{-85., 0.}], 
+                 Point[{-84., 0.}], 
+                 Point[{-83., 0.}], 
+                 Point[{-82., 0.}], 
+                 Point[{-81., 0.}], 
+                 Point[{-80., 0.}], 
+                 Point[{-79., 0.}], 
+                 Point[{-78., 0.}], 
+                 Point[{-77., 0.}], 
+                 Point[{-76., 0.}], 
+                 Point[{-75., 0.}], 
+                 Point[{-74., 0.}], 
+                 Point[{-73., 0.}], 
+                 Point[{-72., 0.}], 
+                 Point[{-71., 0.}], 
+                 Point[{-70., 0.}], 
+                 Point[{-69., 0.}], 
+                 Point[{-68., 0.}], 
+                 Point[{-67., 0.}], 
+                 Point[{-66., 0.}], 
+                 Point[{-65., 0.}], 
+                 Point[{-64., 0.}], 
+                 Point[{-63., 0.}], 
+                 Point[{-62., 0.}], 
+                 Point[{-61., 0.}], 
+                 Point[{-60., 0.}], 
+                 Point[{-59., 0.}], 
+                 Point[{-58., 0.}], 
+                 Point[{-57., 0.}], 
+                 Point[{-56., 0.}], 
+                 Point[{-55., 2.8841390762010774`*^-10}], 
+                 Point[{-54., 0.}], 
+                 Point[{-53., 5.942846770888349*^-8}], 
+                 Point[{-52., 0.}], 
+                 Point[{-51., 3.7272743349548354`*^-6}], 
+                 Point[{-50., 0.}], 
+                 Point[{-49., 0.00010697340421264305`}], 
+                 Point[{-48., 0.}], 
+                 Point[{-47., 0.00141475085650941}], 
+                 Point[{-46., 0.}], 
+                 Point[{-45., 0.008024424580761103}], 
+                 Point[{-44., 0.}], 
+                 Point[{-43., 0.01556951653204876}], 
+                 Point[{-42., 0.}], 
+                 Point[{-41., 0.004827593223714406}], 
+                 Point[{-40., 0.}], 
+                 Point[{-39., 0.00755648034754885}], 
+                 Point[{-38., 0.}], 
+                 Point[{-37., 0.005184902220989386}], 
+                 Point[{-36., 3.761516027736843*^-10}], 
+                 Point[{-35., 0.008517193821865443}], 
+                 Point[{-34., 7.912990481466561*^-8}], 
+                 Point[{-33., 0.0038417910357325578`}], 
+                 Point[{-32., 5.638277035526991*^-6}], 
+                 Point[{-31., 0.00736713280848343}], 
+                 Point[{-30., 0.00018891498325602195`}], 
+                 Point[{-29., 0.00811587365341859}], 
+                 Point[{-28., 0.003040533936338667}], 
+                 Point[{-27., 0.005755269784207779}], 
+                 Point[{-26., 0.022565022230760932`}], 
+                 Point[{-25., 0.005954300637071545}], 
+                 Point[{-24., 0.06712133270909132}], 
+                 Point[{-23., 0.0078213593735874}], 
+                 Point[{-22., 0.05177813070013376}], 
+                 Point[{-21., 0.009021675222008247}], 
+                 Point[{-20., 0.005700375011601179}], 
+                 Point[{-19., 0.009335778221131165}], 
+                 Point[{-18., 0.03216614926460658}], 
+                 Point[{-17., 0.00952280530406882}], 
+                 Point[{-16., 0.007358094219164898}], 
+                 Point[{-15., 0.01012488461599207}], 
+                 Point[{-14., 0.017046216495315}], 
+                 Point[{-13., 0.011442153137403623`}], 
+                 Point[{-12., 0.015890255614016642`}], 
+                 Point[{-11., 0.014129044809679355`}], 
+                 Point[{-10., 0.006982802520586496}], 
+                 Point[{-9., 0.01633973906606168}], 
+                 Point[{-8., 0.011156624612861123`}], 
+                 Point[{-7., 0.013413297652792453`}], 
+                 Point[{-6., 0.013778794960391076`}], 
+                 Point[{-5., 0.011970745664559164`}], 
+                 Point[{-4., 0.011153559538968147`}], 
+                 Point[{-3., 0.01100102556852091}], 
+                 Point[{-2., 0.008884020679227765}], 
+                 Point[{-1., 0.009937479815484828}], 
+                 Point[{0., 0.008883475880627404}], 
+                 Point[{1., 0.008883475880627404}], 
+                 Point[{2., 0.009937479815484828}], 
+                 Point[{3., 0.008884020679227765}], 
+                 Point[{4., 0.01100102556852091}], 
+                 Point[{5., 0.011153559538968147`}], 
+                 Point[{6., 0.011970745664559164`}], 
+                 Point[{7., 0.013778794960391076`}], 
+                 Point[{8., 0.013413297652792453`}], 
+                 Point[{9., 0.011156624612861123`}], 
+                 Point[{10., 0.01633973906606168}], 
+                 Point[{11., 0.006982802520586496}], 
+                 Point[{12., 0.014129044809679355`}], 
+                 Point[{13., 0.015890255614016642`}], 
+                 Point[{14., 0.011442153137403623`}], 
+                 Point[{15., 0.017046216495315}], 
+                 Point[{16., 0.01012488461599207}], 
+                 Point[{17., 0.007358094219164898}], 
+                 Point[{18., 0.00952280530406882}], 
+                 Point[{19., 0.03216614926460658}], 
+                 Point[{20., 0.009335778221131165}], 
+                 Point[{21., 0.005700375011601179}], 
+                 Point[{22., 0.009021675222008247}], 
+                 Point[{23., 0.05177813070013376}], 
+                 Point[{24., 0.0078213593735874}], 
+                 Point[{25., 0.06712133270909132}], 
+                 Point[{26., 0.005954300637071545}], 
+                 Point[{27., 0.022565022230760932`}], 
+                 Point[{28., 0.005755269784207779}], 
+                 Point[{29., 0.003040533936338667}], 
+                 Point[{30., 0.00811587365341859}], 
+                 Point[{31., 0.00018891498325602195`}], 
+                 Point[{32., 0.00736713280848343}], 
+                 Point[{33., 5.638277035526991*^-6}], 
+                 Point[{34., 0.0038417910357325578`}], 
+                 Point[{35., 7.912990481466561*^-8}], 
+                 Point[{36., 0.008517193821865443}], 
+                 Point[{37., 3.761516027736843*^-10}], 
+                 Point[{38., 0.005184902220989386}], 
+                 Point[{39., 0.}], 
+                 Point[{40., 0.00755648034754885}], 
+                 Point[{41., 0.}], 
+                 Point[{42., 0.004827593223714406}], 
+                 Point[{43., 0.}], 
+                 Point[{44., 0.01556951653204876}], 
+                 Point[{45., 0.}], 
+                 Point[{46., 0.008024424580761103}], 
+                 Point[{47., 0.}], 
+                 Point[{48., 0.00141475085650941}], 
+                 Point[{49., 0.}], 
+                 Point[{50., 0.00010697340421264305`}], 
+                 Point[{51., 0.}], 
+                 Point[{52., 3.7272743349548354`*^-6}], 
+                 Point[{53., 0.}], 
+                 Point[{54., 5.942846770888349*^-8}], 
+                 Point[{55., 0.}], 
+                 Point[{56., 2.8841390762010774`*^-10}], 
+                 Point[{57., 0.}], 
+                 Point[{58., 0.}], 
+                 Point[{59., 0.}], 
+                 Point[{60., 0.}], 
+                 Point[{61., 0.}], 
+                 Point[{62., 0.}], 
+                 Point[{63., 0.}], 
+                 Point[{64., 0.}], 
+                 Point[{65., 0.}], 
+                 Point[{66., 0.}], 
+                 Point[{67., 0.}], 
+                 Point[{68., 0.}], 
+                 Point[{69., 0.}], 
+                 Point[{70., 0.}], 
+                 Point[{71., 0.}], 
+                 Point[{72., 0.}], 
+                 Point[{73., 0.}], 
+                 Point[{74., 0.}], 
+                 Point[{75., 0.}], 
+                 Point[{76., 0.}], 
+                 Point[{77., 0.}], 
+                 Point[{78., 0.}], 
+                 Point[{79., 0.}], 
+                 Point[{80., 0.}], 
+                 Point[{81., 0.}], 
+                 Point[{82., 0.}], 
+                 Point[{83., 0.}], 
+                 Point[{84., 0.}], 
+                 Point[{85., 0.}], 
                  Point[{86., 0.}], 
+                 Point[{87., 0.}], 
                  Point[{88., 0.}], 
+                 Point[{89., 0.}], 
                  Point[{90., 0.}], 
+                 Point[{91., 0.}], 
                  Point[{92., 0.}], 
+                 Point[{93., 0.}], 
                  Point[{94., 0.}], 
+                 Point[{95., 0.}], 
                  Point[{96., 0.}], 
+                 Point[{97., 0.}], 
                  Point[{98., 0.}], 
+                 Point[{99., 0.}], 
                  Point[{100., 0.}]}}, "Charting`Private`Tag#1"], {}}}, 
            "GCFlag" -> True|>, 
          "Meta" -> <|
@@ -3292,7 +3445,7 @@ rzyg/ssH6s8CoP4tBOpvGYj/FRloPtiA5ocNaL7YgeaPHWg+OYDmlwNovjmB
        "HighlightElements" -> <|
          "Label" -> {"XYLabel"}, "Ball" -> {"InterpolatedBall"}|>, 
         "LayoutOptions" -> <|
-         "PlotRange" -> {{-100., 100.}, {0, 0.045460907495047054`}}, 
+         "PlotRange" -> {{-100., 100.}, {0, 0.06712133270909132}}, 
           "Frame" -> {{True, True}, {True, True}}, "AxesOrigin" -> {0, 0}, 
           "ImageSize" -> {600, 600/GoldenRatio}, "Axes" -> {False, False}, 
           "LabelStyle" -> {}, "AspectRatio" -> GoldenRatio^(-1), 
@@ -3316,22 +3469,28 @@ rzyg/ssH6s8CoP4tBOpvGYj/FRloPtiA5ocNaL7YgeaPHWg+OYDmlwNovjmB
                 RGBColor[0.368417, 0.506779, 0.709798], 
                 AbsoluteThickness[2]], 
                Line[CompressedData["
-1:eJxdlFtIVFEUhjdC1IOFJMTYoCicQkWnYbJJxKblqDPePXNVK8oMrbHAkB66
-IBxKS9Msw9SkKAa6E6amBRksh6i8UFr2pA0RQkGFL+lYmlbM3tE6Gw6Hj/9c
-9l5r/X9MWZW9PIQxVv7n+nsPrhJk/y+lmDJTsVKk0lWsuFW6ihWXSndhz7aX
-cuG9Faag7sTpsZrJo3fKg8ycqFNCms3PerjuQOvlCV/n21muO3DGULV5/od+
-e1C3477edc93pu0NMrPj2tsDtcr3Oq7bMM661BHYcJ3rNpS1H77dtNziuowx
-c4eH5hZbuS5j+AxL9O4+zrkQpYUnFS/K2jkXYGm89lWF9xjnfGwZk+oOfLrA
-OQ+9/htSnO8E51xc1bUgP7Ce45yDURGTk6PjQs/Gth29ezYGznDOwq3rGyo7
-Lp3ibMXWIwF/l1bhbMHKX4vXI+pOc85EV7WnRvP1JOcMHBh+vck/KJ5Px4ki
-y1LIoVrOZvx8ZenLrp+C09D7dDj0/ph4HzB0db/GNSTYhLGPWljEVfF8KjY1
-6s21g7y+LAXlyGVD5GPBybhm9I2xu1mwEetz379zLAtOQq1UfW16XuzfgB+j
-TCZfTD1nPc6GP1zptjRwTsCRLR7J5znLORbd8lDp8N1GzhJ2e6L2a3WivtHY
-kd/UEBd5nrMGdWHNfSV+0Z8wNPYFXLqpi5wZxvePK+0H2wSz0pH0qURrp2Cg
-ehjQ9zVAvx8N9P8S0P3FAt1/AtDz6YGe3wC0PklA62cEWt9koPVPAdqfVKD9
-MwHtLwDtfxrQ+TADnZ90oPOVAXT+MoHOpwXo/FqBzncW0PnPBuqPHKD+yQXq
-rzyg/ssH6s8CoP4tBOpvGYj/FRloPtiA5ocNaL7YgeaPHWg+OYDmlwNovjmB
-5p8TaD66gOanCxhZbsqKilmRSlcxK1bpKmYl//g3gLKd/w==
+1:eJxd1X9MVWUYB/An1paYXq3RwmD+QMYYA+Iq8kvgPlzuvdwfoJcLAjdza7mM
+1pI1U6/MySv+QCOM0uXqn7KVpKtNN/7TxTO80aiWwzGJJf3hbOnasAarOZdY
+u++pnu/ZGPuc73nOue973vc5a17sir2URkTjf//98z91xIX+f0iHtgEzmMDS
+DvVgBhNY2qAezGACyxaoBzOYwNIK9WAGE1haoB7MYAJLDOrBDCawNEM9mMEE
+lijUgxlMeP1myMFmE+Rg0wQ52DRCDjYR6T8fS05OzNWkTkQgD8vAVVds/Jeu
+2tSJMOQhuZMRvez1XbV5CPKglA0VPT2zONuTOhGEvEG6p4IFPxe127wB8oAU
+PZGXnt1lbB6A3C/jwydy7tx82+Z+yH1yrKOqZMXYLpv7IK+X7qW7PP1zB2xe
+D7lXvDJw+kr1bpt7JdI7Wd46fS81X6ZOpCn+8p7XD9q8TnJj1x9J1uxOzYdh
++VU6f5xIdNmcZckP0W+Wnp2y8+WR2dFPhhYKnefXSnLQxO+O5lvXyIP5ratc
+Hzrjr5a2G6VVe253Wm+UyfceT1x/d691ley770oLZZ22rpTmkazO49sT1hXy
++d7pzJnii9bl0u0eferTR537l8ntD9KS53rPW2+Qv2Z9Mr+v17pU8h9buBKI
+O89bL/Nfrf3945WHrNdJ7WvenzISH1m7ZdmfY+GLxslLJP3WoReOrHXGWyyn
+tr+StvXyYetCef7LROXgG+9YF8iJuYLv7u/ss86Xa2MjdNw/aJ0nB24uiVy4
++5Z1rmSd3Pb1wvv7rXPkzNRQy7ZLzvWrZfZU8vvg9FHrbLl2lNp2JvqtM+VG
+38yAq8K5X4ZMDD0TWnn4mPVy+bbnzKtfTDn1iyR9R/Sz4T7HJPeG3U+Ou535
++m3kbHPPHyuec8ZH9Oybrrme/3KPNrG+fhHr+y1n/bwM1r8nk/XvzWY9ntWs
+x5vDej5yWc9XHuv5zGc93wWs30ch6/dVzPp9lrB+327W62Ed6/WynvV6KmW9
+3jawXo9lrNdrOev1XMF6vVey3g9VrPfLRtb7qZr1fqthvR9rWe9XD+v9zKz2
+u2HW/aCOVb8wdaz6CXlZ9RvjZdWPqJ5VvzL1TOrwsep3xge5n1W/NH7IA6z6
+rQlA3sCqX5sGyIOs+r0JQh5i9b0wIcjDrL43Jgx5hNX3ykQgb2T1vTONkDdp
+GzBtghxMmyEHU1SbwQYsYGqGerABC5hiUA82YAFTC9SDDVjA1Ar1YAMWMG2B
+erABC5jaoB5swAKmdqgHG7CAqQPqwQYsYIr/64e3ayth
                 "]]}, "Charting`Private`Tag#1"]}, {
              Annotation[{
                Directive[
@@ -3339,105 +3498,205 @@ rzyg/ssH6s8CoP4tBOpvGYj/FRloPtiA5ocNaL7YgeaPHWg+OYDmlwNovjmB
                 PointSize[Medium], 
                 RGBColor[1, 0, 0]], {
                 Point[{-100., 0.}], 
+                Point[{-99., 0.}], 
                 Point[{-98., 0.}], 
+                Point[{-97., 0.}], 
                 Point[{-96., 0.}], 
+                Point[{-95., 0.}], 
                 Point[{-94., 0.}], 
+                Point[{-93., 0.}], 
                 Point[{-92., 0.}], 
+                Point[{-91., 0.}], 
                 Point[{-90., 0.}], 
+                Point[{-89., 0.}], 
                 Point[{-88., 0.}], 
+                Point[{-87., 0.}], 
                 Point[{-86., 0.}], 
-                Point[{-84., 6.306561120241461*^-10}], 
-                Point[{-82., 4.034861994422697*^-8}], 
-                Point[{-80., 1.1185789432835533`*^-6}], 
-                Point[{-78., 0.000020815448967281545`}], 
-                Point[{-76., 0.0002590399703279863}], 
-                Point[{-74., 0.0021063606697765843`}], 
-                Point[{-72., 0.01072025685387604}], 
-                Point[{-70., 0.03153966658204716}], 
-                Point[{-68., 0.045460907495047054`}], 
-                Point[{-66., 0.020496231122015488`}], 
-                Point[{-64., 0.006437905787659809}], 
-                Point[{-62., 0.022837749143032174`}], 
-                Point[{-60., 0.006258393843106974}], 
-                Point[{-58., 0.016507752539113133`}], 
-                Point[{-56., 0.006776962962582596}], 
-                Point[{-54., 0.014296891662034308`}], 
-                Point[{-52., 0.006791877965673513}], 
-                Point[{-50., 0.011701869769621436`}], 
-                Point[{-48., 0.009562674285132562}], 
-                Point[{-46., 0.00786530875387318}], 
-                Point[{-44., 0.01099605581805348}], 
-                Point[{-42., 0.009239379241244775}], 
-                Point[{-40., 0.008182273706528569}], 
-                Point[{-38., 0.009971640953874962}], 
-                Point[{-36., 0.010243154479964336`}], 
-                Point[{-34., 0.009187080338363188}], 
-                Point[{-32., 0.00917307359373478}], 
-                Point[{-30., 0.010065265016432415`}], 
-                Point[{-28., 0.010623009939143356`}], 
-                Point[{-26., 0.010605075949469495`}], 
-                Point[{-24., 0.01052607010419673}], 
-                Point[{-22., 0.010740904773830953`}], 
-                Point[{-20., 0.011216913333798975`}], 
-                Point[{-18., 0.011783139729018403`}], 
-                Point[{-16., 0.012341186628427517`}], 
-                Point[{-14., 0.012897030578780019`}], 
-                Point[{-12., 0.013509350851713158`}], 
-                Point[{-10., 0.01424809845393757}], 
-                Point[{-8., 0.015192341337331425`}], 
-                Point[{-6., 0.01647319956420306}], 
-                Point[{-4., 0.01841804885582584}], 
-                Point[{-2., 0.021894805181025635`}], 
-                Point[{0., 0.02566215187921317}], 
-                Point[{2., 0.021894805181025635`}], 
-                Point[{4., 0.01841804885582584}], 
-                Point[{6., 0.01647319956420306}], 
-                Point[{8., 0.015192341337331425`}], 
-                Point[{10., 0.01424809845393757}], 
-                Point[{12., 0.013509350851713158`}], 
-                Point[{14., 0.012897030578780019`}], 
-                Point[{16., 0.012341186628427517`}], 
-                Point[{18., 0.011783139729018403`}], 
-                Point[{20., 0.011216913333798975`}], 
-                Point[{22., 0.010740904773830953`}], 
-                Point[{24., 0.01052607010419673}], 
-                Point[{26., 0.010605075949469495`}], 
-                Point[{28., 0.010623009939143356`}], 
-                Point[{30., 0.010065265016432415`}], 
-                Point[{32., 0.00917307359373478}], 
-                Point[{34., 0.009187080338363188}], 
-                Point[{36., 0.010243154479964336`}], 
-                Point[{38., 0.009971640953874962}], 
-                Point[{40., 0.008182273706528569}], 
-                Point[{42., 0.009239379241244775}], 
-                Point[{44., 0.01099605581805348}], 
-                Point[{46., 0.00786530875387318}], 
-                Point[{48., 0.009562674285132562}], 
-                Point[{50., 0.011701869769621436`}], 
-                Point[{52., 0.006791877965673513}], 
-                Point[{54., 0.014296891662034308`}], 
-                Point[{56., 0.006776962962582596}], 
-                Point[{58., 0.016507752539113133`}], 
-                Point[{60., 0.006258393843106974}], 
-                Point[{62., 0.022837749143032174`}], 
-                Point[{64., 0.006437905787659809}], 
-                Point[{66., 0.020496231122015488`}], 
-                Point[{68., 0.045460907495047054`}], 
-                Point[{70., 0.03153966658204716}], 
-                Point[{72., 0.01072025685387604}], 
-                Point[{74., 0.0021063606697765843`}], 
-                Point[{76., 0.0002590399703279863}], 
-                Point[{78., 0.000020815448967281545`}], 
-                Point[{80., 1.1185789432835533`*^-6}], 
-                Point[{82., 4.034861994422697*^-8}], 
-                Point[{84., 6.306561120241461*^-10}], 
+                Point[{-85., 0.}], 
+                Point[{-84., 0.}], 
+                Point[{-83., 0.}], 
+                Point[{-82., 0.}], 
+                Point[{-81., 0.}], 
+                Point[{-80., 0.}], 
+                Point[{-79., 0.}], 
+                Point[{-78., 0.}], 
+                Point[{-77., 0.}], 
+                Point[{-76., 0.}], 
+                Point[{-75., 0.}], 
+                Point[{-74., 0.}], 
+                Point[{-73., 0.}], 
+                Point[{-72., 0.}], 
+                Point[{-71., 0.}], 
+                Point[{-70., 0.}], 
+                Point[{-69., 0.}], 
+                Point[{-68., 0.}], 
+                Point[{-67., 0.}], 
+                Point[{-66., 0.}], 
+                Point[{-65., 0.}], 
+                Point[{-64., 0.}], 
+                Point[{-63., 0.}], 
+                Point[{-62., 0.}], 
+                Point[{-61., 0.}], 
+                Point[{-60., 0.}], 
+                Point[{-59., 0.}], 
+                Point[{-58., 0.}], 
+                Point[{-57., 0.}], 
+                Point[{-56., 0.}], 
+                Point[{-55., 2.8841390762010774`*^-10}], 
+                Point[{-54., 0.}], 
+                Point[{-53., 5.942846770888349*^-8}], 
+                Point[{-52., 0.}], 
+                Point[{-51., 3.7272743349548354`*^-6}], 
+                Point[{-50., 0.}], 
+                Point[{-49., 0.00010697340421264305`}], 
+                Point[{-48., 0.}], 
+                Point[{-47., 0.00141475085650941}], 
+                Point[{-46., 0.}], 
+                Point[{-45., 0.008024424580761103}], 
+                Point[{-44., 0.}], 
+                Point[{-43., 0.01556951653204876}], 
+                Point[{-42., 0.}], 
+                Point[{-41., 0.004827593223714406}], 
+                Point[{-40., 0.}], 
+                Point[{-39., 0.00755648034754885}], 
+                Point[{-38., 0.}], 
+                Point[{-37., 0.005184902220989386}], 
+                Point[{-36., 3.761516027736843*^-10}], 
+                Point[{-35., 0.008517193821865443}], 
+                Point[{-34., 7.912990481466561*^-8}], 
+                Point[{-33., 0.0038417910357325578`}], 
+                Point[{-32., 5.638277035526991*^-6}], 
+                Point[{-31., 0.00736713280848343}], 
+                Point[{-30., 0.00018891498325602195`}], 
+                Point[{-29., 0.00811587365341859}], 
+                Point[{-28., 0.003040533936338667}], 
+                Point[{-27., 0.005755269784207779}], 
+                Point[{-26., 0.022565022230760932`}], 
+                Point[{-25., 0.005954300637071545}], 
+                Point[{-24., 0.06712133270909132}], 
+                Point[{-23., 0.0078213593735874}], 
+                Point[{-22., 0.05177813070013376}], 
+                Point[{-21., 0.009021675222008247}], 
+                Point[{-20., 0.005700375011601179}], 
+                Point[{-19., 0.009335778221131165}], 
+                Point[{-18., 0.03216614926460658}], 
+                Point[{-17., 0.00952280530406882}], 
+                Point[{-16., 0.007358094219164898}], 
+                Point[{-15., 0.01012488461599207}], 
+                Point[{-14., 0.017046216495315}], 
+                Point[{-13., 0.011442153137403623`}], 
+                Point[{-12., 0.015890255614016642`}], 
+                Point[{-11., 0.014129044809679355`}], 
+                Point[{-10., 0.006982802520586496}], 
+                Point[{-9., 0.01633973906606168}], 
+                Point[{-8., 0.011156624612861123`}], 
+                Point[{-7., 0.013413297652792453`}], 
+                Point[{-6., 0.013778794960391076`}], 
+                Point[{-5., 0.011970745664559164`}], 
+                Point[{-4., 0.011153559538968147`}], 
+                Point[{-3., 0.01100102556852091}], 
+                Point[{-2., 0.008884020679227765}], 
+                Point[{-1., 0.009937479815484828}], 
+                Point[{0., 0.008883475880627404}], 
+                Point[{1., 0.008883475880627404}], 
+                Point[{2., 0.009937479815484828}], 
+                Point[{3., 0.008884020679227765}], 
+                Point[{4., 0.01100102556852091}], 
+                Point[{5., 0.011153559538968147`}], 
+                Point[{6., 0.011970745664559164`}], 
+                Point[{7., 0.013778794960391076`}], 
+                Point[{8., 0.013413297652792453`}], 
+                Point[{9., 0.011156624612861123`}], 
+                Point[{10., 0.01633973906606168}], 
+                Point[{11., 0.006982802520586496}], 
+                Point[{12., 0.014129044809679355`}], 
+                Point[{13., 0.015890255614016642`}], 
+                Point[{14., 0.011442153137403623`}], 
+                Point[{15., 0.017046216495315}], 
+                Point[{16., 0.01012488461599207}], 
+                Point[{17., 0.007358094219164898}], 
+                Point[{18., 0.00952280530406882}], 
+                Point[{19., 0.03216614926460658}], 
+                Point[{20., 0.009335778221131165}], 
+                Point[{21., 0.005700375011601179}], 
+                Point[{22., 0.009021675222008247}], 
+                Point[{23., 0.05177813070013376}], 
+                Point[{24., 0.0078213593735874}], 
+                Point[{25., 0.06712133270909132}], 
+                Point[{26., 0.005954300637071545}], 
+                Point[{27., 0.022565022230760932`}], 
+                Point[{28., 0.005755269784207779}], 
+                Point[{29., 0.003040533936338667}], 
+                Point[{30., 0.00811587365341859}], 
+                Point[{31., 0.00018891498325602195`}], 
+                Point[{32., 0.00736713280848343}], 
+                Point[{33., 5.638277035526991*^-6}], 
+                Point[{34., 0.0038417910357325578`}], 
+                Point[{35., 7.912990481466561*^-8}], 
+                Point[{36., 0.008517193821865443}], 
+                Point[{37., 3.761516027736843*^-10}], 
+                Point[{38., 0.005184902220989386}], 
+                Point[{39., 0.}], 
+                Point[{40., 0.00755648034754885}], 
+                Point[{41., 0.}], 
+                Point[{42., 0.004827593223714406}], 
+                Point[{43., 0.}], 
+                Point[{44., 0.01556951653204876}], 
+                Point[{45., 0.}], 
+                Point[{46., 0.008024424580761103}], 
+                Point[{47., 0.}], 
+                Point[{48., 0.00141475085650941}], 
+                Point[{49., 0.}], 
+                Point[{50., 0.00010697340421264305`}], 
+                Point[{51., 0.}], 
+                Point[{52., 3.7272743349548354`*^-6}], 
+                Point[{53., 0.}], 
+                Point[{54., 5.942846770888349*^-8}], 
+                Point[{55., 0.}], 
+                Point[{56., 2.8841390762010774`*^-10}], 
+                Point[{57., 0.}], 
+                Point[{58., 0.}], 
+                Point[{59., 0.}], 
+                Point[{60., 0.}], 
+                Point[{61., 0.}], 
+                Point[{62., 0.}], 
+                Point[{63., 0.}], 
+                Point[{64., 0.}], 
+                Point[{65., 0.}], 
+                Point[{66., 0.}], 
+                Point[{67., 0.}], 
+                Point[{68., 0.}], 
+                Point[{69., 0.}], 
+                Point[{70., 0.}], 
+                Point[{71., 0.}], 
+                Point[{72., 0.}], 
+                Point[{73., 0.}], 
+                Point[{74., 0.}], 
+                Point[{75., 0.}], 
+                Point[{76., 0.}], 
+                Point[{77., 0.}], 
+                Point[{78., 0.}], 
+                Point[{79., 0.}], 
+                Point[{80., 0.}], 
+                Point[{81., 0.}], 
+                Point[{82., 0.}], 
+                Point[{83., 0.}], 
+                Point[{84., 0.}], 
+                Point[{85., 0.}], 
                 Point[{86., 0.}], 
+                Point[{87., 0.}], 
                 Point[{88., 0.}], 
+                Point[{89., 0.}], 
                 Point[{90., 0.}], 
+                Point[{91., 0.}], 
                 Point[{92., 0.}], 
+                Point[{93., 0.}], 
                 Point[{94., 0.}], 
+                Point[{95., 0.}], 
                 Point[{96., 0.}], 
+                Point[{97., 0.}], 
                 Point[{98., 0.}], 
+                Point[{99., 0.}], 
                 Point[{100., 0.}]}}, "Charting`Private`Tag#1"], {}}}, 
           "GCFlag" -> True|>, 
         "Meta" -> <|
@@ -3447,23 +3706,29 @@ rzyg/ssH6s8CoP4tBOpvGYj/FRloPtiA5ocNaL7YgeaPHWg+OYDmlwNovjmB
        4.503599627370496*^15, -4.503599627370496*^15}}]},
     Annotation[
      GraphicsComplex[CompressedData["
-1:eJztlftLFFEUxy9C1A8WkhBri6IwhYpuy2abiG3HVXd9O/tUK8oMrbXAkH7o
-gTCUlqZZhqlJkSz0JkxNCzI4LlG5SmnZT9oSIRRU+Eu6lqY99g50BvoP9sIw
-fPjemblzHt8TU1ZlLQ9hjHl/X3/ugVWC7N8lFVNmCpaKFLqCJadCV7DkUOgO
-7N32Qiy8u8IQ0O04PVYzefR2eYCZHTVSSLPxaS/XbWi+POHpfDPLdRvO6Ko2
-z3/Xbg/oVtzXt+7ZzrS9AWZWXHtrsFb6Vsd1C8aZlzr8G7q4bkFR/f7rDdNN
-rosYM3d4eG6xlesihs+wRPfu45wLUVh4XPG8rJ1zAZbGq19WuI9xzseWMaHu
-wMcLnPPQ7bsuxHlOcM7FVd0L4n3zOc45GBUxOTk6LuvZ2Lajb89G/xnOWbh1
-fUNlx6VTnM3YesTv61ZLnE1Y+XOxK6LuNOdMdFS7alRfTnLOwEHvq02+IXl/
-Ok4UmZZCDtVyNuKnK0ufd/2QOQ3dT7yh98bk5wFDVw+oHMMyGzD2YQuLuCrv
-T8WmRq2xdojHl6WgGLmsi3wkczKuGX2t72mWWY/1ue/e2pZlTkK1UH1tel4+
-vw4/RBkMnph6zlqcDX+w0mlq4JyAI1tcgsd1lnMsOsXhUu+dRs4C9rii9qs1
-cnyjsSO/qSEu8jxnFWrCmvtLfHJ+wlDf73dopi5yZhg/MC61H2yTmZWOpE8l
-mjtlBqqHAX1eBfT90UC/LwA9XyzQ8ycA/T8t0P/XAY1PEtD46YHGNxlo/FOA
-5icVaP4MQPMLQPOfBrQ+jEDrJx1ofWUArb9MoPVpAlq/ZqD1nQW0/rOB9kcO
-0P7JBdpfeUD7Lx9ofxYA7d9CoP0tAul/SQTqDxag/mEB6i9WoP5jBepPNqD+
-ZQPqb3ag/mcH6o8OoP7pAEaWk7KkYFak0BXMihW6glmJklGxn3JwngTnSXCe
-BOdJcJ4E58lf/f/z5Bdfpjpf
+1:eJzt1/9PVXUYB/BH1paU3szRwmBmyBhjQFxFvgnch8u9cL+AXi4I3Myt5Spa
+S9ZMvbImn9BEI4zM5eqX0pWUqy03fsvFM7zRqJbDMYkl/eBq6dqwBqs5V7R2
+P2f5vP+Gc36B132f59x7Pufz+Zw9jz3dG38mg4hOriD672/6SAjdfUi3tgEz
+mMDSBfVgBhNYOqEezGACyw6oBzOYwNIB9WAGE1jaoR7MYAJLHOrBDCawtEE9
+mMEElhjUgxlMeP52yMFmG+Rg0wo52LRADjZRGTofT81ML9alP4hCHpHhy574
+1K+99ekPIpCH5WZW7KI/cNnmYchDUjFa8vD8fbm+9AchyJulbzZU9EtJl82b
+IW+SkgcLMnN7jc2bIA/K1NiJvJvX37R5EPKAHOuuKVs3udfmAcgbpW/1Xt/Q
+4iGbN0LuF78Mn75Uu8/mfokOzFR2zN1Oj5dpEGlNPLf/pVdt3iD58asrUnX7
+0uNhWH6Tnh+nk702Z1n1Q+yb1edm7Xj5ZGHiw9HlYuf76yU1YhK3Jgqt6+Sf
+pZ2Pet537r9WOq+V1+y/0WO9VWbeuT959eQB6xo5eMeTEc45bV0tbeM5Pcd3
+J62r5NMDc9nzpResK6XPO/HQR/c416+QG+9lpD4ZOG+9Rf5eCMjSwQHrcim8
+d/lSU8L5vs2y9NXGP86uP2y9Sepf9P+UlfzA2isP/DUZuWCcvEwyfz781Gsb
+nfstlVO7n8/YefGIdbE8+WWyeuTlt6yL5MRi0Xd39gxaF8qVyXE6HhyxLpBD
+11dFP7/1hnW+5Ly96+vld1+xzpMzs6Ptu75wzt8gC6dS34fmjlrnypWj1Lkn
+OWSdLdcG54c9Vc71smR69JHw+iPHrNfIt/1nXvhs1qlfKZnPxj4eG3RMcnvM
+u3bK64zX7+Pn2vr/XPeEc39Ej7/uWez/P/dpE+vzV7K+3hrW35fF+vdks/69
+uazvZwPr+81jPR75rMergPV4FrIe7yLWz6OY9fMqZf08y1g/by/r+bCJ9XzZ
+zHo+lbOeb1tYz8cK1vO1kvV8rmI936tZr4ca1utlK+v1VMt6vdWxXo/1rNer
+j/V6Zlbr3TDr/aCB1X5hGljtJ+Rntd8YP6v9iBpZ7VemkUkdAVb7nQlAHmS1
+X5og5E2s9lvTBHkzq/3aNEMeYrXfmxDkYVbvCxOGPMLqfWMikEdZva9MFPIW
+Vu870wJ5q7YB0zbIwbQdcjDFtBlswAKmNqgHG7CAKQ71YAMWMLVDPdiABUwd
+UA82YAHTDqgHG7CAqRPqwQYsYOqCerABC5i6oR5swAKmBFrgfG23H4F6tx/R
+9W4/onO3H3H7EbcfcfsRtx9J524/4vYjdx1uPwL1bj/i/PcvGv9UFQ==
       "], {{{}, {}, 
         Annotation[{
           Hue[0.67, 0.6, 0.6], 
@@ -3479,7 +3744,15 @@ BOdJcJ4E58lf/f/z5Bdfpjpf
             52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 
            68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84,
             85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 
-           101}]}, "Charting`Private`Tag#1"]}, {
+           101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 
+           114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 
+           127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 
+           140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 
+           153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 
+           166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 
+           179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 
+           192, 193, 194, 195, 196, 197, 198, 199, 200, 201}]}, 
+         "Charting`Private`Tag#1"]}, {
         Annotation[{
           Directive[
            AbsoluteThickness[2], 
@@ -3492,11 +3765,19 @@ BOdJcJ4E58lf/f/z5Bdfpjpf
            51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67,
             68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 
            84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 
-           100, 101}]}, "Charting`Private`Tag#1"], {}}}], <|
+           100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 
+           113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 
+           126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 
+           139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 
+           152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 
+           165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 
+           178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 
+           191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201}]}, 
+         "Charting`Private`Tag#1"], {}}}], <|
      "HighlightElements" -> <|
        "Label" -> {"XYLabel"}, "Ball" -> {"InterpolatedBall"}|>, 
       "LayoutOptions" -> <|
-       "PlotRange" -> {{-100., 100.}, {0, 0.045460907495047054`}}, 
+       "PlotRange" -> {{-100., 100.}, {0, 0.06712133270909132}}, 
         "Frame" -> {{True, True}, {True, True}}, "AxesOrigin" -> {0, 0}, 
         "ImageSize" -> {600, 600/GoldenRatio}, "Axes" -> {False, False}, 
         "LabelStyle" -> {}, "AspectRatio" -> GoldenRatio^(-1), "DefaultStyle" -> {
@@ -3519,22 +3800,28 @@ BOdJcJ4E58lf/f/z5Bdfpjpf
               RGBColor[0.368417, 0.506779, 0.709798], 
               AbsoluteThickness[2]], 
              Line[CompressedData["
-1:eJxdlFtIVFEUhjdC1IOFJMTYoCicQkWnYbJJxKblqDPePXNVK8oMrbHAkB66
-IBxKS9Msw9SkKAa6E6amBRksh6i8UFr2pA0RQkGFL+lYmlbM3tE6Gw6Hj/9c
-9l5r/X9MWZW9PIQxVv7n+nsPrhJk/y+lmDJTsVKk0lWsuFW6ihWXSndhz7aX
-cuG9Faag7sTpsZrJo3fKg8ycqFNCms3PerjuQOvlCV/n21muO3DGULV5/od+
-e1C3477edc93pu0NMrPj2tsDtcr3Oq7bMM661BHYcJ3rNpS1H77dtNziuowx
-c4eH5hZbuS5j+AxL9O4+zrkQpYUnFS/K2jkXYGm89lWF9xjnfGwZk+oOfLrA
-OQ+9/htSnO8E51xc1bUgP7Ce45yDURGTk6PjQs/Gth29ezYGznDOwq3rGyo7
-Lp3ibMXWIwF/l1bhbMHKX4vXI+pOc85EV7WnRvP1JOcMHBh+vck/KJ5Px4ki
-y1LIoVrOZvx8ZenLrp+C09D7dDj0/ph4HzB0db/GNSTYhLGPWljEVfF8KjY1
-6s21g7y+LAXlyGVD5GPBybhm9I2xu1mwEetz379zLAtOQq1UfW16XuzfgB+j
-TCZfTD1nPc6GP1zptjRwTsCRLR7J5znLORbd8lDp8N1GzhJ2e6L2a3WivtHY
-kd/UEBd5nrMGdWHNfSV+0Z8wNPYFXLqpi5wZxvePK+0H2wSz0pH0qURrp2Cg
-ehjQ9zVAvx8N9P8S0P3FAt1/AtDz6YGe3wC0PklA62cEWt9koPVPAdqfVKD9
-MwHtLwDtfxrQ+TADnZ90oPOVAXT+MoHOpwXo/FqBzncW0PnPBuqPHKD+yQXq
-rzyg/ssH6s8CoP4tBOpvGYj/FRloPtiA5ocNaL7YgeaPHWg+OYDmlwNovjmB
-5p8TaD66gOanCxhZbsqKilmRSlcxK1bpKmYl//g3gLKd/w==
+1:eJxd1X9MVWUYB/An1paYXq3RwmD+QMYYA+Iq8kvgPlzuvdwfoJcLAjdza7mM
+1pI1U6/MySv+QCOM0uXqn7KVpKtNN/7TxTO80aiWwzGJJf3hbOnasAarOZdY
+u++pnu/ZGPuc73nOue973vc5a17sir2URkTjf//98z91xIX+f0iHtgEzmMDS
+DvVgBhNY2qAezGACyxaoBzOYwNIK9WAGE1haoB7MYAJLDOrBDCawNEM9mMEE
+lijUgxlMeP1myMFmE+Rg0wQ52DRCDjYR6T8fS05OzNWkTkQgD8vAVVds/Jeu
+2tSJMOQhuZMRvez1XbV5CPKglA0VPT2zONuTOhGEvEG6p4IFPxe127wB8oAU
+PZGXnt1lbB6A3C/jwydy7tx82+Z+yH1yrKOqZMXYLpv7IK+X7qW7PP1zB2xe
+D7lXvDJw+kr1bpt7JdI7Wd46fS81X6ZOpCn+8p7XD9q8TnJj1x9J1uxOzYdh
++VU6f5xIdNmcZckP0W+Wnp2y8+WR2dFPhhYKnefXSnLQxO+O5lvXyIP5ratc
+Hzrjr5a2G6VVe253Wm+UyfceT1x/d691ley770oLZZ22rpTmkazO49sT1hXy
++d7pzJnii9bl0u0eferTR537l8ntD9KS53rPW2+Qv2Z9Mr+v17pU8h9buBKI
+O89bL/Nfrf3945WHrNdJ7WvenzISH1m7ZdmfY+GLxslLJP3WoReOrHXGWyyn
+tr+StvXyYetCef7LROXgG+9YF8iJuYLv7u/ss86Xa2MjdNw/aJ0nB24uiVy4
++5Z1rmSd3Pb1wvv7rXPkzNRQy7ZLzvWrZfZU8vvg9FHrbLl2lNp2JvqtM+VG
+38yAq8K5X4ZMDD0TWnn4mPVy+bbnzKtfTDn1iyR9R/Sz4T7HJPeG3U+Ou535
++m3kbHPPHyuec8ZH9Oybrrme/3KPNrG+fhHr+y1n/bwM1r8nk/XvzWY9ntWs
+x5vDej5yWc9XHuv5zGc93wWs30ch6/dVzPp9lrB+327W62Ed6/WynvV6KmW9
+3jawXo9lrNdrOev1XMF6vVey3g9VrPfLRtb7qZr1fqthvR9rWe9XD+v9zKz2
+u2HW/aCOVb8wdaz6CXlZ9RvjZdWPqJ5VvzL1TOrwsep3xge5n1W/NH7IA6z6
+rQlA3sCqX5sGyIOs+r0JQh5i9b0wIcjDrL43Jgx5hNX3ykQgb2T1vTONkDdp
+GzBtghxMmyEHU1SbwQYsYGqGerABC5hiUA82YAFTC9SDDVjA1Ar1YAMWMG2B
+erABC5jaoB5swAKmdqgHG7CAqQPqwQYsYIr/64e3ayth
               "]]}, "Charting`Private`Tag#1"]}, {
            Annotation[{
              Directive[
@@ -3542,105 +3829,205 @@ rzyg/ssH6s8CoP4tBOpvGYj/FRloPtiA5ocNaL7YgeaPHWg+OYDmlwNovjmB
               PointSize[Medium], 
               RGBColor[1, 0, 0]], {
               Point[{-100., 0.}], 
+              Point[{-99., 0.}], 
               Point[{-98., 0.}], 
+              Point[{-97., 0.}], 
               Point[{-96., 0.}], 
+              Point[{-95., 0.}], 
               Point[{-94., 0.}], 
+              Point[{-93., 0.}], 
               Point[{-92., 0.}], 
+              Point[{-91., 0.}], 
               Point[{-90., 0.}], 
+              Point[{-89., 0.}], 
               Point[{-88., 0.}], 
+              Point[{-87., 0.}], 
               Point[{-86., 0.}], 
-              Point[{-84., 6.306561120241461*^-10}], 
-              Point[{-82., 4.034861994422697*^-8}], 
-              Point[{-80., 1.1185789432835533`*^-6}], 
-              Point[{-78., 0.000020815448967281545`}], 
-              Point[{-76., 0.0002590399703279863}], 
-              Point[{-74., 0.0021063606697765843`}], 
-              Point[{-72., 0.01072025685387604}], 
-              Point[{-70., 0.03153966658204716}], 
-              Point[{-68., 0.045460907495047054`}], 
-              Point[{-66., 0.020496231122015488`}], 
-              Point[{-64., 0.006437905787659809}], 
-              Point[{-62., 0.022837749143032174`}], 
-              Point[{-60., 0.006258393843106974}], 
-              Point[{-58., 0.016507752539113133`}], 
-              Point[{-56., 0.006776962962582596}], 
-              Point[{-54., 0.014296891662034308`}], 
-              Point[{-52., 0.006791877965673513}], 
-              Point[{-50., 0.011701869769621436`}], 
-              Point[{-48., 0.009562674285132562}], 
-              Point[{-46., 0.00786530875387318}], 
-              Point[{-44., 0.01099605581805348}], 
-              Point[{-42., 0.009239379241244775}], 
-              Point[{-40., 0.008182273706528569}], 
-              Point[{-38., 0.009971640953874962}], 
-              Point[{-36., 0.010243154479964336`}], 
-              Point[{-34., 0.009187080338363188}], 
-              Point[{-32., 0.00917307359373478}], 
-              Point[{-30., 0.010065265016432415`}], 
-              Point[{-28., 0.010623009939143356`}], 
-              Point[{-26., 0.010605075949469495`}], 
-              Point[{-24., 0.01052607010419673}], 
-              Point[{-22., 0.010740904773830953`}], 
-              Point[{-20., 0.011216913333798975`}], 
-              Point[{-18., 0.011783139729018403`}], 
-              Point[{-16., 0.012341186628427517`}], 
-              Point[{-14., 0.012897030578780019`}], 
-              Point[{-12., 0.013509350851713158`}], 
-              Point[{-10., 0.01424809845393757}], 
-              Point[{-8., 0.015192341337331425`}], 
-              Point[{-6., 0.01647319956420306}], 
-              Point[{-4., 0.01841804885582584}], 
-              Point[{-2., 0.021894805181025635`}], 
-              Point[{0., 0.02566215187921317}], 
-              Point[{2., 0.021894805181025635`}], 
-              Point[{4., 0.01841804885582584}], 
-              Point[{6., 0.01647319956420306}], 
-              Point[{8., 0.015192341337331425`}], 
-              Point[{10., 0.01424809845393757}], 
-              Point[{12., 0.013509350851713158`}], 
-              Point[{14., 0.012897030578780019`}], 
-              Point[{16., 0.012341186628427517`}], 
-              Point[{18., 0.011783139729018403`}], 
-              Point[{20., 0.011216913333798975`}], 
-              Point[{22., 0.010740904773830953`}], 
-              Point[{24., 0.01052607010419673}], 
-              Point[{26., 0.010605075949469495`}], 
-              Point[{28., 0.010623009939143356`}], 
-              Point[{30., 0.010065265016432415`}], 
-              Point[{32., 0.00917307359373478}], 
-              Point[{34., 0.009187080338363188}], 
-              Point[{36., 0.010243154479964336`}], 
-              Point[{38., 0.009971640953874962}], 
-              Point[{40., 0.008182273706528569}], 
-              Point[{42., 0.009239379241244775}], 
-              Point[{44., 0.01099605581805348}], 
-              Point[{46., 0.00786530875387318}], 
-              Point[{48., 0.009562674285132562}], 
-              Point[{50., 0.011701869769621436`}], 
-              Point[{52., 0.006791877965673513}], 
-              Point[{54., 0.014296891662034308`}], 
-              Point[{56., 0.006776962962582596}], 
-              Point[{58., 0.016507752539113133`}], 
-              Point[{60., 0.006258393843106974}], 
-              Point[{62., 0.022837749143032174`}], 
-              Point[{64., 0.006437905787659809}], 
-              Point[{66., 0.020496231122015488`}], 
-              Point[{68., 0.045460907495047054`}], 
-              Point[{70., 0.03153966658204716}], 
-              Point[{72., 0.01072025685387604}], 
-              Point[{74., 0.0021063606697765843`}], 
-              Point[{76., 0.0002590399703279863}], 
-              Point[{78., 0.000020815448967281545`}], 
-              Point[{80., 1.1185789432835533`*^-6}], 
-              Point[{82., 4.034861994422697*^-8}], 
-              Point[{84., 6.306561120241461*^-10}], 
+              Point[{-85., 0.}], 
+              Point[{-84., 0.}], 
+              Point[{-83., 0.}], 
+              Point[{-82., 0.}], 
+              Point[{-81., 0.}], 
+              Point[{-80., 0.}], 
+              Point[{-79., 0.}], 
+              Point[{-78., 0.}], 
+              Point[{-77., 0.}], 
+              Point[{-76., 0.}], 
+              Point[{-75., 0.}], 
+              Point[{-74., 0.}], 
+              Point[{-73., 0.}], 
+              Point[{-72., 0.}], 
+              Point[{-71., 0.}], 
+              Point[{-70., 0.}], 
+              Point[{-69., 0.}], 
+              Point[{-68., 0.}], 
+              Point[{-67., 0.}], 
+              Point[{-66., 0.}], 
+              Point[{-65., 0.}], 
+              Point[{-64., 0.}], 
+              Point[{-63., 0.}], 
+              Point[{-62., 0.}], 
+              Point[{-61., 0.}], 
+              Point[{-60., 0.}], 
+              Point[{-59., 0.}], 
+              Point[{-58., 0.}], 
+              Point[{-57., 0.}], 
+              Point[{-56., 0.}], 
+              Point[{-55., 2.8841390762010774`*^-10}], 
+              Point[{-54., 0.}], 
+              Point[{-53., 5.942846770888349*^-8}], 
+              Point[{-52., 0.}], 
+              Point[{-51., 3.7272743349548354`*^-6}], 
+              Point[{-50., 0.}], 
+              Point[{-49., 0.00010697340421264305`}], 
+              Point[{-48., 0.}], 
+              Point[{-47., 0.00141475085650941}], 
+              Point[{-46., 0.}], 
+              Point[{-45., 0.008024424580761103}], 
+              Point[{-44., 0.}], 
+              Point[{-43., 0.01556951653204876}], 
+              Point[{-42., 0.}], 
+              Point[{-41., 0.004827593223714406}], 
+              Point[{-40., 0.}], 
+              Point[{-39., 0.00755648034754885}], 
+              Point[{-38., 0.}], 
+              Point[{-37., 0.005184902220989386}], 
+              Point[{-36., 3.761516027736843*^-10}], 
+              Point[{-35., 0.008517193821865443}], 
+              Point[{-34., 7.912990481466561*^-8}], 
+              Point[{-33., 0.0038417910357325578`}], 
+              Point[{-32., 5.638277035526991*^-6}], 
+              Point[{-31., 0.00736713280848343}], 
+              Point[{-30., 0.00018891498325602195`}], 
+              Point[{-29., 0.00811587365341859}], 
+              Point[{-28., 0.003040533936338667}], 
+              Point[{-27., 0.005755269784207779}], 
+              Point[{-26., 0.022565022230760932`}], 
+              Point[{-25., 0.005954300637071545}], 
+              Point[{-24., 0.06712133270909132}], 
+              Point[{-23., 0.0078213593735874}], 
+              Point[{-22., 0.05177813070013376}], 
+              Point[{-21., 0.009021675222008247}], 
+              Point[{-20., 0.005700375011601179}], 
+              Point[{-19., 0.009335778221131165}], 
+              Point[{-18., 0.03216614926460658}], 
+              Point[{-17., 0.00952280530406882}], 
+              Point[{-16., 0.007358094219164898}], 
+              Point[{-15., 0.01012488461599207}], 
+              Point[{-14., 0.017046216495315}], 
+              Point[{-13., 0.011442153137403623`}], 
+              Point[{-12., 0.015890255614016642`}], 
+              Point[{-11., 0.014129044809679355`}], 
+              Point[{-10., 0.006982802520586496}], 
+              Point[{-9., 0.01633973906606168}], 
+              Point[{-8., 0.011156624612861123`}], 
+              Point[{-7., 0.013413297652792453`}], 
+              Point[{-6., 0.013778794960391076`}], 
+              Point[{-5., 0.011970745664559164`}], 
+              Point[{-4., 0.011153559538968147`}], 
+              Point[{-3., 0.01100102556852091}], 
+              Point[{-2., 0.008884020679227765}], 
+              Point[{-1., 0.009937479815484828}], 
+              Point[{0., 0.008883475880627404}], 
+              Point[{1., 0.008883475880627404}], 
+              Point[{2., 0.009937479815484828}], 
+              Point[{3., 0.008884020679227765}], 
+              Point[{4., 0.01100102556852091}], 
+              Point[{5., 0.011153559538968147`}], 
+              Point[{6., 0.011970745664559164`}], 
+              Point[{7., 0.013778794960391076`}], 
+              Point[{8., 0.013413297652792453`}], 
+              Point[{9., 0.011156624612861123`}], 
+              Point[{10., 0.01633973906606168}], 
+              Point[{11., 0.006982802520586496}], 
+              Point[{12., 0.014129044809679355`}], 
+              Point[{13., 0.015890255614016642`}], 
+              Point[{14., 0.011442153137403623`}], 
+              Point[{15., 0.017046216495315}], 
+              Point[{16., 0.01012488461599207}], 
+              Point[{17., 0.007358094219164898}], 
+              Point[{18., 0.00952280530406882}], 
+              Point[{19., 0.03216614926460658}], 
+              Point[{20., 0.009335778221131165}], 
+              Point[{21., 0.005700375011601179}], 
+              Point[{22., 0.009021675222008247}], 
+              Point[{23., 0.05177813070013376}], 
+              Point[{24., 0.0078213593735874}], 
+              Point[{25., 0.06712133270909132}], 
+              Point[{26., 0.005954300637071545}], 
+              Point[{27., 0.022565022230760932`}], 
+              Point[{28., 0.005755269784207779}], 
+              Point[{29., 0.003040533936338667}], 
+              Point[{30., 0.00811587365341859}], 
+              Point[{31., 0.00018891498325602195`}], 
+              Point[{32., 0.00736713280848343}], 
+              Point[{33., 5.638277035526991*^-6}], 
+              Point[{34., 0.0038417910357325578`}], 
+              Point[{35., 7.912990481466561*^-8}], 
+              Point[{36., 0.008517193821865443}], 
+              Point[{37., 3.761516027736843*^-10}], 
+              Point[{38., 0.005184902220989386}], 
+              Point[{39., 0.}], 
+              Point[{40., 0.00755648034754885}], 
+              Point[{41., 0.}], 
+              Point[{42., 0.004827593223714406}], 
+              Point[{43., 0.}], 
+              Point[{44., 0.01556951653204876}], 
+              Point[{45., 0.}], 
+              Point[{46., 0.008024424580761103}], 
+              Point[{47., 0.}], 
+              Point[{48., 0.00141475085650941}], 
+              Point[{49., 0.}], 
+              Point[{50., 0.00010697340421264305`}], 
+              Point[{51., 0.}], 
+              Point[{52., 3.7272743349548354`*^-6}], 
+              Point[{53., 0.}], 
+              Point[{54., 5.942846770888349*^-8}], 
+              Point[{55., 0.}], 
+              Point[{56., 2.8841390762010774`*^-10}], 
+              Point[{57., 0.}], 
+              Point[{58., 0.}], 
+              Point[{59., 0.}], 
+              Point[{60., 0.}], 
+              Point[{61., 0.}], 
+              Point[{62., 0.}], 
+              Point[{63., 0.}], 
+              Point[{64., 0.}], 
+              Point[{65., 0.}], 
+              Point[{66., 0.}], 
+              Point[{67., 0.}], 
+              Point[{68., 0.}], 
+              Point[{69., 0.}], 
+              Point[{70., 0.}], 
+              Point[{71., 0.}], 
+              Point[{72., 0.}], 
+              Point[{73., 0.}], 
+              Point[{74., 0.}], 
+              Point[{75., 0.}], 
+              Point[{76., 0.}], 
+              Point[{77., 0.}], 
+              Point[{78., 0.}], 
+              Point[{79., 0.}], 
+              Point[{80., 0.}], 
+              Point[{81., 0.}], 
+              Point[{82., 0.}], 
+              Point[{83., 0.}], 
+              Point[{84., 0.}], 
+              Point[{85., 0.}], 
               Point[{86., 0.}], 
+              Point[{87., 0.}], 
               Point[{88., 0.}], 
+              Point[{89., 0.}], 
               Point[{90., 0.}], 
+              Point[{91., 0.}], 
               Point[{92., 0.}], 
+              Point[{93., 0.}], 
               Point[{94., 0.}], 
+              Point[{95., 0.}], 
               Point[{96., 0.}], 
+              Point[{97., 0.}], 
               Point[{98., 0.}], 
+              Point[{99., 0.}], 
               Point[{100., 0.}]}}, "Charting`Private`Tag#1"], {}}}, "GCFlag" -> 
         True|>, "Meta" -> <|
        "DefaultHighlight" -> {"Dynamic", None}, "Index" -> {}, "Function" -> 
@@ -3725,7 +4112,7 @@ rzyg/ssH6s8CoP4tBOpvGYj/FRloPtiA5ocNaL7YgeaPHWg+OYDmlwNovjmB
          Part[#, 1]], 
         Identity[
          Part[#, 2]]}& )}},
-  PlotRange->{{-100., 100.}, {0, 0.045460907495047054`}},
+  PlotRange->{{-100., 100.}, {0, 0.06712133270909132}},
   PlotRangeClipping->True,
   PlotRangePadding->{{
      Scaled[0.02], 
@@ -3735,9 +4122,10 @@ rzyg/ssH6s8CoP4tBOpvGYj/FRloPtiA5ocNaL7YgeaPHWg+OYDmlwNovjmB
   Ticks->{Automatic, Automatic}]], "Output",
  CellChangeTimes->{
   3.929790308230176*^9, 3.929794269438375*^9, {3.9297943172732143`*^9, 
-   3.929794342351219*^9}, 3.929794435719192*^9, 3.929794488877523*^9},
+   3.929794342351219*^9}, 3.929794435719192*^9, 3.929794488877523*^9, 
+   3.929796197619897*^9, 3.929796344227668*^9, 3.9297964192668047`*^9},
  CellLabel->
-  "Out[140]=",ExpressionUUID->"5ff35881-12d5-405b-8c20-09f43b357541"]
+  "Out[163]=",ExpressionUUID->"6a55ca4a-7cf6-4344-b4ee-9dcdc6719ac7"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -5161,25 +5549,25 @@ Cell[95232, 2169, 34326, 698, 578, "Output",ExpressionUUID->"874824fa-3835-4ec6-
 Cell[CellGroupData[{
 Cell[129607, 2873, 174, 3, 50, "Section",ExpressionUUID->"0a4d24df-7e24-430f-bc61-0fb25bb6dbff"],
 Cell[CellGroupData[{
-Cell[129806, 2880, 870, 21, 22, "Input",ExpressionUUID->"ee454770-bd5d-48d0-a362-52fcb77114cc"],
-Cell[130679, 2903, 630, 15, 37, "Output",ExpressionUUID->"ec6f08cf-454b-4899-8a82-8289869f1586"]
+Cell[129806, 2880, 1036, 23, 22, "Input",ExpressionUUID->"ee454770-bd5d-48d0-a362-52fcb77114cc"],
+Cell[130845, 2905, 752, 18, 37, "Output",ExpressionUUID->"7e85423a-51e7-48ba-a3cc-bb5ba4ccf4ab"]
 }, Open  ]],
-Cell[131324, 2921, 1043, 20, 22, "Input",ExpressionUUID->"0f3307af-c74b-4740-8873-8bc6e39997d4"],
+Cell[131612, 2926, 1091, 21, 22, "Input",ExpressionUUID->"0f3307af-c74b-4740-8873-8bc6e39997d4"],
 Cell[CellGroupData[{
-Cell[132392, 2945, 305, 6, 22, "Input",ExpressionUUID->"a8aebd30-883d-4ac6-bc04-3d2b5822a5c7"],
-Cell[132700, 2953, 544, 10, 45, "Output",ExpressionUUID->"d7846f91-570b-43a7-8c96-633ce636ea0c"]
+Cell[132728, 2951, 305, 6, 22, "Input",ExpressionUUID->"a8aebd30-883d-4ac6-bc04-3d2b5822a5c7"],
+Cell[133036, 2959, 614, 11, 45, "Output",ExpressionUUID->"43383062-585a-40fb-96ee-ef6340813b30"]
 }, Open  ]],
-Cell[133259, 2966, 415, 10, 22, "Input",ExpressionUUID->"dca82899-6ea7-4e08-8b63-9ddfbce976e3"],
-Cell[133677, 2978, 538, 11, 22, "Input",ExpressionUUID->"a26e6d21-2a9a-4389-9799-88f4755e5671"],
+Cell[133665, 2973, 415, 10, 22, "Input",ExpressionUUID->"dca82899-6ea7-4e08-8b63-9ddfbce976e3"],
+Cell[134083, 2985, 538, 11, 22, "Input",ExpressionUUID->"a26e6d21-2a9a-4389-9799-88f4755e5671"],
 Cell[CellGroupData[{
-Cell[134240, 2993, 206, 4, 22, "Input",ExpressionUUID->"b7bfafda-c4d5-47dd-a927-329179c194d7"],
-Cell[134449, 2999, 291, 5, 35, "Output",ExpressionUUID->"71bc7e30-0e7c-4554-9c76-a22c2d8d074a"]
+Cell[134646, 3000, 206, 4, 22, "Input",ExpressionUUID->"b7bfafda-c4d5-47dd-a927-329179c194d7"],
+Cell[134855, 3006, 367, 6, 35, "Output",ExpressionUUID->"ada4b56b-8b6c-49a5-b056-e261aa4e841f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[134777, 3009, 1147, 28, 130, "Input",ExpressionUUID->"b010805e-f496-4f34-a532-418369a3e8b6"],
-Cell[135927, 3039, 34438, 700, 326, "Output",ExpressionUUID->"5ff35881-12d5-405b-8c20-09f43b357541"]
+Cell[135259, 3017, 1104, 25, 130, "Input",ExpressionUUID->"b010805e-f496-4f34-a532-418369a3e8b6"],
+Cell[136366, 3044, 51341, 1083, 328, "Output",ExpressionUUID->"6a55ca4a-7cf6-4344-b4ee-9dcdc6719ac7"]
 }, Open  ]],
-Cell[170380, 3742, 54643, 1289, 289, "Input",ExpressionUUID->"abf8741e-209f-4b03-aa42-182d7f67a140"]
+Cell[187722, 4130, 54643, 1289, 289, "Input",ExpressionUUID->"abf8741e-209f-4b03-aa42-182d7f67a140"]
 }, Open  ]]
 }, Open  ]]
 }
