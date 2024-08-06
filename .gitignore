@@ -359,4 +359,6 @@ Temporary Items
 # iCloud generated files
 *.icloud
 
+### cosas JA
+.notas_lun05ago.autosave.xopp
 # End of https://www.toptal.com/developers/gitignore/api/latex,macos,linux
