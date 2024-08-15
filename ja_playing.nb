@@ -1,0 +1,109 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3181,        101]
+NotebookOptionsPosition[      2333,         76]
+NotebookOutlinePosition[      2725,         92]
+CellTagsIndexPosition[      2682,         89]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Getting started", "Section",
+ CellChangeTimes->{{3.9326712102481337`*^9, 3.932671216008272*^9}, {
+  3.932671252172283*^9, 
+  3.932671266248361*^9}},ExpressionUUID->"8b1608c9-9bee-442d-8637-\
+2b367ccfcf62"],
+
+Cell[CellGroupData[{
+
+Cell["Imports and definitions", "Subsection",
+ CellChangeTimes->{{3.932671268462973*^9, 
+  3.932671272864295*^9}},ExpressionUUID->"5b52792d-4b0a-4d76-8f6b-\
+b7a6b88f5e03"],
+
+Cell[BoxData[{
+ RowBox[{"Get", "[", 
+  RowBox[{
+   RowBox[{"NotebookDirectory", "[", "]"}], "<>", 
+   "\"\</AmadoTemp/DTQW.wl\>\""}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"<<", "MaTeX`"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"MatrixPartialTrace", "=", 
+   RowBox[{"ResourceFunction", "[", "\"\<MatrixPartialTrace\>\"", "]"}]}], 
+  ";"}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.9311030782935*^9, 3.931103081991757*^9}, {
+  3.931476747439921*^9, 3.93147674775838*^9}, {3.931691282568035*^9, 
+  3.9316912889081993`*^9}, {3.9326712475098*^9, 3.932671247661072*^9}, {
+  3.932671288229672*^9, 
+  3.9326712902136707`*^9}},ExpressionUUID->"51faca52-5c4a-4fe4-9bd7-\
+12077bc30c40"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Initializations", "Subsection",
+ CellChangeTimes->{{3.932671292684928*^9, 
+  3.9326712985159073`*^9}},ExpressionUUID->"6c351249-5b8c-4a8d-825f-\
+90307c7f02a6"],
+
+Cell[BoxData[{
+ RowBox[{"InitializeDTQW", "[", 
+  RowBox[{"2", ",", "201"}], "]"}], "\n", 
+ RowBox[{
+  RowBox[{"MakeCoin", "[", 
+   RowBox[{"0.1", ",", "0", ",", "0"}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"MakeShift", "[", "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"MakeUnitary", "[", "]"}], ";"}]}], "Input",ExpressionUUID->\
+"eb34ffce-b20e-4c5e-a9f9-47deba284ff4"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{720, 762},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+FrontEndVersion->"14.0 for Linux x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"c99c1ca9-1f95-4675-a9d6-ffb860339b7f"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 211, 4, 50, "Section",ExpressionUUID->"8b1608c9-9bee-442d-8637-2b367ccfcf62"],
+Cell[CellGroupData[{
+Cell[816, 30, 171, 3, 41, "Subsection",ExpressionUUID->"5b52792d-4b0a-4d76-8f6b-b7a6b88f5e03"],
+Cell[990, 35, 740, 17, 80, "Input",ExpressionUUID->"51faca52-5c4a-4fe4-9bd7-12077bc30c40",
+ InitializationCell->True]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1767, 57, 165, 3, 41, "Subsection",ExpressionUUID->"6c351249-5b8c-4a8d-825f-90307c7f02a6"],
+Cell[1935, 62, 370, 10, 68, "Input",ExpressionUUID->"eb34ffce-b20e-4c5e-a9f9-47deba284ff4"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
