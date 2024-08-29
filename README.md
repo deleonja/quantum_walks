@@ -20,3 +20,4 @@ la misma densidad de probabilidad clásica, para p=0.5. *Respuesta*: tomando un 
 - [ ] Verificar si existe una distribución límite o si se hace infinitamente ancha
 - [ ] Ajustar una gaussiana a la distribución de probabilidad para varios tiempos y ver si le ajusta
 - [ ] Graficar en un mismo plot las curvas con p=0.5 para t = 20,50,80,....
+- [ ] Verificar a partir de que t, para dos estados iniciales aleatorios, la distribución de probabilidad es igual a la de RAndomWAlkDistribution
