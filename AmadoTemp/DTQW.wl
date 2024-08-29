@@ -25,7 +25,7 @@ MakeCoin::usage="Given an specification it will build the appropriate operator (
 MakeShift::usage="Given an specification it will build the appropriate shift operator (incomplete)."
 
 
-MakeUnitary::usage="Given shift ...."
+MakeUnitary::usage="MakeUnitary[] "
 
 
 VectorState::usage="VectorState[{{\!\(\*SubscriptBox[
@@ -78,10 +78,20 @@ StyleBox[\"n\", \"TI\"]\) steps in the DTQW with initial DMatrixState \!\(\*
 StyleBox[\"state\", \"TI\"]\) using the Coin and Shift operators created by their respective functions."
 
 
-DTQW2::usage="DTQW2[state] alternative definition"
+DTQW2::usage="DTQW2[\!\(\*
+StyleBox[\"state\", \"TI\"]\),\!\(\*
+StyleBox[\"n\", \"TI\"]\)] evaluates \!\(\*
+StyleBox[\"n\", \"TI\"]\) steps in the DTQW with initial VectorState \!\(\*
+StyleBox[\"state\", \"TI\"]\) using the Coin and Shift operators created by their respective functions."
 
 
-DTQW2wDecoherence::usage="DTQW2wDecoherence[state...] m\[AAcute]s cositas"
+DTQW2wDecoherence::usage="DTQW2wDecoherence[\!\(\*
+StyleBox[\"state\", \"TI\"]\),\!\(\*
+StyleBox[\"p\", \"TI\"]\),\!\(\*
+StyleBox[\"n\", \"TI\"]\)] evaluates \!\(\*
+StyleBox[\"n\", \"TI\"]\) steps in the DTQW with initial VectorState \!\(\*
+StyleBox[\"state\", \"TI\"]\) using the Coin and Shift operators created by their respective functions and with \!\(\*
+StyleBox[\"p\", \"TI\"]\) probability of getting a phase\[Dash]flip."
 
 
 Begin["`Private`"];
