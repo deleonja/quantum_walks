@@ -4,17 +4,24 @@
 # To-do
 
 ## Amado 
+### 05.09.24
+- [ ] Hacer 3 pasos a mano de la DTQW con decoherencia p=0.5 para entender porqué se vuelve clásica instantáneamente
+- [ ] Pensar en cómo obtener la deformación de la esfera de Bloch que describe al canal cuántico de la moneda (dinámica reducdida de la moneda) 
+- [ ] Seguir revisando la literatura
+
 ### 22.08.24
-- [ ] Hacer el estado de dos posiciones diferentes que no es un estado entrelazado
+- [X] Hacer el estado de dos posiciones diferentes que no es un estado entrelazado
 - [ ] Variar el número de pasos para la DTQW con decoherencia y determinar en qué tiempo ya es igual a la distribución clásica
-- [ ] Revisar literatura sobre modelos teóricos recientes con decoherencia. Uno revisa por año y el otro por los más citados
+- [X] Revisar literatura sobre modelos teóricos recientes con decoherencia. Uno revisa por año y el otro por los más citados
 
 ## Mariana
-### 29.08.24
-- [ ] Revisar caminata cuántica con el estado inicial 0,0 y t=3, caminata con decoherencia con p=1.
+### 05.09.24
 - [ ] Verificar si existe una distribución límite o si se hace infinitamente ancha
-- [ ] Verificar a partir de que t, para dos estados iniciales aleatorios, la distribución de probabilidad es igual a la de RAndomWAlkDistribution
-- [ ] Graficar en un mismo plot las curvas con p=0.5 para t = 20,50,80,....
+- [ ] Verificar a partir de que t, para dos estados iniciales aleatorios de la moneda en producto tensorial con la posición 0, la distribución de probabilidad es igual a la de RAndomWAlkDistribution. Graficar en un mismo plot las curvas con p=0.5 para t = 20,50,80,....
+- [ ] Seguir revisando la literatura
+
+### 29.08.24
+- [X] Revisar caminata cuántica con el estado inicial 0,0 y t=3, caminata con decoherencia con p=1.
 
 
 ### 22.08.24
