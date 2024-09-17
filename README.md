@@ -1,4 +1,4 @@
-### Nota
+### Notas
 
 - Cualquier estado inicial producto tiende a la distribución clásica
 - Parece que no todos los estados de la moneda en una DTQW con decohrencia se
@@ -26,16 +26,12 @@
 
 - [x] Hacer 3 pasos a mano de la DTQW con decoherencia p=0.5 para entender porqué se vuelve clásica instantáneamente
 
-  [^Lo hizo simbólicamente en Mathematica, pero su código calcula matrices de densidad que no preservan la traza]: dfdsfsd
 - [x] Pensar en cómo obtener la deformación de la esfera de Bloch que describe al canal cuántico de la moneda (dinámica reducdida de la moneda)
 
 **Mariana**
 
 - [x] Verificar si existe una distribución límite o si se hace infinitamente ancha
 
-  [^Bien]: 
-
-  
 - [x] Verificar a partir de que t, para dos estados iniciales aleatorios de la moneda en producto tensorial con la posición 0, la distribución de probabilidad es igual a la de RAndomWAlkDistribution. Graficar en un mismo plot las curvas con p=0.5 para t=20,50,80,....
 
 #### 29.09.24
