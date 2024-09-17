@@ -1,5 +1,6 @@
 # Notas 
 - Cualquier estado inicial producto tiende a la distribución clásica 
+- Parece que no todos los estados de la moneda en una DTQW con decohrencia se vuelve una caminata clásica (Mariana)
 
 # To-do
 ## 16.09.24
