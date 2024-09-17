@@ -21,7 +21,6 @@
 ### Mariana
 - [ ] Verificar si existe una distribución límite o si se hace infinitamente ancha
 - [ ] Verificar a partir de que t, para dos estados iniciales aleatorios de la moneda en producto tensorial con la posición 0, la distribución de probabilidad es igual a la de RAndomWAlkDistribution. Graficar en un mismo plot las curvas con p=0.5 para t = 20,50,80,....
-- [ ] Seguir revisando la literatura
 
 ## 29.09.24
 ### Mariana
