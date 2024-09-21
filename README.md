@@ -3,21 +3,37 @@
 - Cualquier estado inicial producto tiende a la distribución clásica
 - Parece que no todos los estados de la moneda en una DTQW con decohrencia se
   vuelve una caminata clásica (Mariana)
+- Las diferencias entre la RW y DQTW 
 
 ### To-do
+
+#### 20.09.24
+
+- [ ] Mariana y Amado comparan sus resultados, hasta ver en qué paso dejan de ser iguales (si son iguales al principio y sino ver qué está pasando)
+
+**Mariana**
+
+- [ ] Revisar paper sobre la distribución límite (distribución de Kono o algo así) y tratar de entender el resultado para saber si es la misma distribución límite que nosotros estamos buscando.
+- [ ] Repetir los cálculos de las diferencias entre las distribuciones de probabilidad de posición del caminante de la RW y DTQW p=0.5 con valores numéricos y no con valores exactos (Mathematica se pone pendejo con números muy chiquitos)
+- [ ] Calcular las dierencias entre las distribuciones de probabilidad deposición entre la RW y la DTQW para estados mixtos iniciales de la moneda. Estados que estén sobre los ejes, sobre los planos y un estado aleatorio. 
+
+**Amado**
+
+- [ ] Graficar la deformación de la esfera de Bloch (dinámica reducida de la moneda) calculando los operadores de Kraus del canal cuántico que actúa sobre la moneda en una DTQW (sin decoherencia)
+- [ ] Revisar artículos en la literatura sobre caminatas cuánticas y decoherencia
 
 #### 16.09.24
 
 **Amado**
 
-- [ ] Hacer a mano (lápiz y papel) 3 pasos de la DTQW con decoherencia, p=0.5, para entender mejor que la caminata cuántica parece que se vuelve instantáneamente clásica
+- [x] Hacer a mano (lápiz y papel) 3 pasos de la DTQW con decoherencia, p=0.5, para entender mejor que la caminata cuántica parece que se vuelve instantáneamente clásica
 - [ ] Graficar la deformación de la esfera de Bloch (dinámica reducida de la moneda) calculando los operadores de Kraus del canal cuántico que actúa sobre la moneda en una DTQW (sin decoherencia)
 - [ ] Seguir revisando la literatura
 
 **Mariana**
 
 - [ ] Revisar paper sobre la distribución límite (que tiene Amado) y tratar de entender el resultado para saber si es la misma distribución límite que nosotros estamos buscando.
-- [ ] Verificar las diferencias entre la distribución de probabilidad de la posición de una caminata cuántica vs. una caminata clásica que comienza en el origen
+- [x] Verificar las diferencias entre la distribución de probabilidad de la posición de una caminata cuántica vs. una caminata clásica que comienza en el origen. **Comportamientos diferentes para diferentes estados, el que vuelve más clásica la DTQW parece ser el estado inicial |+_x > **
 - [ ] Seguir revisando la literatura
 
 #### 05.09.24
