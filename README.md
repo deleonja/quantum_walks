@@ -1,9 +1,6 @@
 ### Notas
 
-- Cualquier estado inicial producto tiende a la distribución clásica
-- Parece que no todos los estados de la moneda en una DTQW con decohrencia se
-  vuelve una caminata clásica (Mariana)
-- Las diferencias entre la RW y DQTW 
+- No todos los estados iniciales \psi_0 \otimes \ket{0} tiende a la distribución clásica. Hay desviaciones con la distribución de probabilidad de la RW para ciertos estados. Cuáles?? Caracterizar esto
 
 ### To-do
 
