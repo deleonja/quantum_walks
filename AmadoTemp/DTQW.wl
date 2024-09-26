@@ -82,6 +82,11 @@ DTQW2::usage="DTQW2[\!\(\*
 StyleBox[\"state\", \"TI\"]\),\!\(\*
 StyleBox[\"n\", \"TI\"]\)] evaluates \!\(\*
 StyleBox[\"n\", \"TI\"]\) steps in the DTQW with initial VectorState \!\(\*
+StyleBox[\"state\", \"TI\"]\) using the Coin and Shift operators created by their respective functions.
+DTQW2[\!\(\*
+StyleBox[\"state\", \"TI\"]\),\!\(\*
+StyleBox[\"n\", \"TI\"]\)] evaluates \!\(\*
+StyleBox[\"n\", \"TI\"]\) steps in the DTQW with initial DMatrixState \!\(\*
 StyleBox[\"state\", \"TI\"]\) using the Coin and Shift operators created by their respective functions."
 
 
@@ -90,6 +95,13 @@ StyleBox[\"state\", \"TI\"]\),\!\(\*
 StyleBox[\"p\", \"TI\"]\),\!\(\*
 StyleBox[\"n\", \"TI\"]\)] evaluates \!\(\*
 StyleBox[\"n\", \"TI\"]\) steps in the DTQW with initial VectorState \!\(\*
+StyleBox[\"state\", \"TI\"]\) using the Coin and Shift operators created by their respective functions and with \!\(\*
+StyleBox[\"p\", \"TI\"]\) probability of getting a phase\[Dash]flip.
+DTQW2wDecoherence[\!\(\*
+StyleBox[\"state\", \"TI\"]\),\!\(\*
+StyleBox[\"p\", \"TI\"]\),\!\(\*
+StyleBox[\"n\", \"TI\"]\)] evaluates \!\(\*
+StyleBox[\"n\", \"TI\"]\) steps in the DTQW with initial DMatrixState \!\(\*
 StyleBox[\"state\", \"TI\"]\) using the Coin and Shift operators created by their respective functions and with \!\(\*
 StyleBox[\"p\", \"TI\"]\) probability of getting a phase\[Dash]flip."
 
@@ -157,6 +169,21 @@ KroneckerProduct[coinB[[#[[2]]+Round[coinSize/2]]],posB[[#[[3]]+Round[(posSize+1
 
 
 DTQW[state_DMatrixState,n_Integer]:=MatrixPower[ShiftMat . KroneckerProduct[CoinMat,IdentityMatrix[posSize]],n] . N[DMatrixStateToMatrix[state]] . (MatrixPower[ShiftMat . KroneckerProduct[CoinMat,IdentityMatrix[posSize]],n])\[ConjugateTranspose]
+
+
+DTQW2[state_DMatrixState,n_Integer]:=Module[
+{U=UnitaryMat},
+Nest[U . # . U\[ConjugateTranspose]&,N[DMatrixStateToMatrix[state]],n]
+]
+
+
+DTQW2wDecoherence[state_DMatrixState,p_?NumericQ,n_Integer]:=Module[
+{U=UnitaryMat,K1,K2,rho},
+K1=Sqrt[p] U;
+K2=Sqrt[1-p] KroneckerProduct[PauliMatrix[3],IdentityMatrix[posSize]] . U;
+rho=N[DMatrixStateToMatrix[state]];
+Nest[Chop[K1 . # . K1\[ConjugateTranspose]+K2 . # . K2\[ConjugateTranspose]]&,rho,n]
+]
 
 
 End[];
