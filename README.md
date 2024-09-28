@@ -4,19 +4,31 @@
 
 ### To-do
 
-#### 20.09.24
-
-- [ ] Mariana y Amado comparan sus resultados, hasta ver en qué paso dejan de ser iguales (si son iguales al principio y sino ver qué está pasando)
+#### 27.09.24
 
 **Mariana**
 
 - [ ] Revisar paper sobre la distribución límite (distribución de Kono o algo así) y tratar de entender el resultado para saber si es la misma distribución límite que nosotros estamos buscando.
-- [ ] Repetir los cálculos de las diferencias entre las distribuciones de probabilidad de posición del caminante de la RW y DTQW p=0.5 con valores numéricos y no con valores exactos (Mathematica se pone pendejo con números muy chiquitos)
-- [ ] Calcular las dierencias entre las distribuciones de probabilidad deposición entre la RW y la DTQW para estados mixtos iniciales de la moneda. Estados que estén sobre los ejes, sobre los planos y un estado aleatorio. 
+- [ ] Diagnosticar el problema numérico, quizás con MatrixPartialTrace
+
+**Amado**
+- [ ] Hacer visualizaciones gráficas de la esfera de Bloch para el canal de la moneda y jugar con más tiempos para ver cómo se ve la dinámica
+- [ ] Trabajar en la analítica del triángulo de Pascal para la DTQW con completamente dephasing
+
+#### 20.09.24
+
+- [X] Mariana y Amado comparan sus resultados, hasta ver en qué paso dejan de ser iguales (si son iguales al principio y sino ver qué está pasando)
+
+**Mariana**
+
+- [ ] Revisar paper sobre la distribución límite (distribución de Kono o algo así) y tratar de entender el resultado para saber si es la misma distribución límite que nosotros estamos buscando.
+- [X] Repetir los cálculos de las diferencias entre las distribuciones de probabilidad de posición del caminante de la RW y DTQW p=0.5 con valores numéricos y no con valores exactos (Mathematica se pone pendejo con números muy chiquitos)
+- [X] Calcular las dierencias entre las distribuciones de probabilidad deposición entre la RW y la DTQW para estados mixtos iniciales de la moneda. Estados que estén sobre los ejes, sobre los planos y un estado aleatorio. 
 
 **Amado**
 
-- [ ] Graficar la deformación de la esfera de Bloch (dinámica reducida de la moneda) calculando los operadores de Kraus del canal cuántico que actúa sobre la moneda en una DTQW (sin decoherencia)
+- [X] Graficar la deformación de la esfera de Bloch (dinámica reducida de la moneda) calculando los operadores de Kraus del canal cuántico que actúa sobre la moneda en una DTQW (sin decoherencia)
+- [X] Cálculos a mano de DTQW con completamente dephasing
 - [ ] Revisar artículos en la literatura sobre caminatas cuánticas y decoherencia
 
 #### 16.09.24
