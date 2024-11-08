@@ -1,8 +1,27 @@
+**Voy a probar un nuevo formato para la lista de tareas: ya no las ordenaré por fecha, sino que sólo por nombre. **
+
 ### Notas
 
 - No todos los estados iniciales \psi_0 \otimes \ket{0} tiende a la distribución clásica. Hay desviaciones con la distribución de probabilidad de la RW para ciertos estados. Cuáles?? Caracterizar esto
 
 ### To-do
+
+Revisar paper sobre la distribución límite (distribución de Kono o algo así) y tratar de entender el resultado para saber si es la misma distribución límite que nosotros estamos buscando.
+
+- Qué hacen en el artículo de Science Advances??
+- Qué modelo de decoherencia usan y cómo se relaciona con el nuestro?? 
+- Cómo se implemenenta ahí el espacio de la posición?? 
+- En el artículo review, qué modelos de decoherencia parecidos al nuestro hay??
+
+## Mariana
+
+- [ ] Revisar paper sobre la distribución límite (distribución de Kono o algo así) y tratar de entender el resultado para saber si es la misma distribución límite que nosotros estamos buscando.
+- [ ] Diagnosticar el problema numérico, quizás con MatrixPartialTrace
+
+## Amado
+
+- [ ] Hacer visualizaciones gráficas de la esfera de Bloch para el canal de la moneda y jugar con más tiempos para ver cómo se ve la dinámica
+- [ ] Trabajar en la analítica del triángulo de Pascal para la DTQW con completamente dephasing
 
 #### 27.09.24
 
