@@ -1,0 +1,93 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\title{Propuesta de proyecto de prácticas: caminatas cuánticas con decoherencia}
+\author{José Alfredo de León}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Se presenta una propuesta de proyecto de prácticas para un estudiante de
+física de la ECFM de octavo semestre como mínimo para estudiar el efecto
+de la decoherencia en caminatas cuánticas discretas en 1 dimensión.
+\end{abstract}
+
+\section{Objetivo principal}
+Estudiar cómo se modifican las caminatas cuánticas discretas en 1 dimensión
+(``DQWL'' por sus siglas en inglés: \textit{discrete quantum walks in a line})
+bajo la acción de decoherencia, modelada con canales cuánticos Pauli 
+component erasing.
+
+\section{Objetivos específicos}
+\begin{itemize}
+\item Estudiar el formalismo de la matriz de densidad. 
+\item Estudiar la teoría de los canales cuánticos y los canales cuánticos Pauli component erasing. 
+\item Estudiar el modelo de DQWL.
+\item Hacer un revisión bibliográfica del estado del arte en modelos de caminatas aleatorias con decoherencia. 
+\item Implementar numéricamente un modelo de DQWL con decoherencia modelada 
+con Pauli component erasing channels.
+\end{itemize}
+
+\section{Duración}
+El proyecto se pretende que sea finalizado en 1 semestre (4 meses), considerando
+como finalizado el proyecto hasta la entrega del informe final. Se espera 
+que la o el estudiante dedique 6 horas como máximo a la semana al proyecto. 
+
+\section{Descripción del proyecto}
+
+El proyecto consiste en tres partes, no todas igual de extensas: 
+(1) el estudiante
+estudiará el marco teórico, 
+que se compone del formalismo de la matriz de densidad,
+la teoría de los canales cuánticos y las caminatas cuánticas discretas en 1 
+dimensión; (2) el estudiante hará una revisión bibliográfica del estado del
+arte de las caminatas cuánticas aleatorias; (3) finalmente, el estudiante
+implementará numéricamente un modelo de decoherencia en caminatas cuánticas
+discretas en 1 dimensión y estudiará cómo se modifican en contraste con 
+caminatas sin decoherencia. Se estipula que cada parte del proyecto consista
+en el $50\%,\,25\%$ y $25\%$, respectivamente.
+
+Ahora se describen con un más detalle las partes 1 y 2. En la primera parte,
+el estudiante estudiará el formalismo de la matriz de densidad y la teoría 
+de los canales cuánticos de los capítulos 2 y 8 del libro introductorio~\cite{nielsen_chuang_2010} de Nielsen y Chuang, además 
+estudiará la forma de Kraus de los canales \textit{Pauli component erasing}, que 
+modelan decoherencia de sistemas de partículas dos niveles, del artículo~\cite{PCE2022}; por último, estudiará 
+las caminatas cuánticas discretas en 1 dimensión del artículo de
+revisión~\cite{venegas2012quantum} de Venegas-Andraca. Para la segunda parte, 
+se orientará al estudiante para que aprenda a hacer un revisión bibliográfica
+y que lo ponga en práctica investigando el estado del conocimiento 
+de los modelos de decoherencia
+en caminatas cuánticas. El acceso a los artículos de revistas se hará por 
+medio de la cuenta institucional de la UNAM del asesor. El estudiante 
+escribirá en el informe final sobre lo aprendido del marco teórico y 
+sobre su revisión bibliográfica.
+
+Finalmente, se describe en breve la última parte del proyecto. El objetivo 
+de esta parte del proyecto es que el estudiante ponga inmediatamente en
+práctica lo aprendido en las primeras dos partes. El estudiante 
+creará sus propias herramientas computacionales, en el lenguaje de programación
+de su preferencia, para modelar caminatas aleatorias discretas en 1 dimensión 
+con decoherencia. Él o ella estudiará sistemáticamente cómo se modifican 
+las caminatas cuánticas discretas en 1 dimensión bajo la acción de los 
+canales Pauli component erasing. Sus resultados y una discusión deberán 
+ser incluídos en la última parte del informe final.
+
+\section{Sobre la dinámica de asesoría}
+El asesor se compromete a orientar durante todo el proyecto al estudiante
+y a reunirse de manera virtual con él o ella por lo menos 1 vez cada 2
+semanas. Se pretende que en estas reuniones periódicas se resuelvan 
+dudas del estudiante y que él o ella presente sus avances de estudio, revisión bibliografía o implementación numérica,
+para así asegurar la finalización del proyecto en el tiempo estipulado.
+
+
+\bibliographystyle{amsplain}
+\bibliography{references}
+
+\end{document}
