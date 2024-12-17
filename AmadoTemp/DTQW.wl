@@ -150,9 +150,13 @@ Nest[Dot[U,#]&,N[VectorStateToArray[state]],n]
 
 DTQW2wDecoherence[state_VectorState,p_?NumericQ,n_Integer]:=Module[
 {U=UnitaryMat,K1,K2,rho},
+(* Caminata cu\[AAcute]ntica con decoherencia calculada seg\[UAcute]n los operadores de Kraus *)
+(* Calculo de operadores de Kraus *)
 K1=Sqrt[p] U;
 K2=Sqrt[1-p] KroneckerProduct[PauliMatrix[3],IdentityMatrix[posSize]] . U;
+(* Calculo de la matriz densidad *)
 rho=# . #\[ConjugateTranspose]&@N[VectorStateToArray[state]];
+(* Calculo del canal cu\[AAcute]ntico *)
 Nest[Chop[K1 . # . K1\[ConjugateTranspose]+K2 . # . K2\[ConjugateTranspose]]&,rho,n]
 ]
 
