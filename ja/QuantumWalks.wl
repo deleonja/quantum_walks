@@ -14,6 +14,7 @@ DTQWStep::usage = "DTQWStep[t] or DTQWStep[t, c] returns the full unitary step o
 DTQW::usage = "DTQW[psi0, t] or DTQW[psi0, t, c] evolves initial state psi0 for t steps."
 PositionProbabilityDistribution::usage = "PositionProbabilityDistribution[psi, tmax] computes total position probability at each site."
 KetBra::usage = "KetBra[psi] returns the density matrix |psi\:27e9\:27e8psi|."
+ExpValPosition::usage = "ExpValPosition[psi,t] returns the position expected at time t for state psi.";
 
 
 Begin["`Private`"]
@@ -65,6 +66,9 @@ PositionProbabilityDistribution[psi_, tmax_] := Chop[
 
 
 KetBra[psi_] := Transpose[{psi}] . Conjugate[{psi}]
+
+
+ExpValPosition[\[Psi]_,t_]:=PositionProbabilityDistribution[\[Psi],t] . Range[-t-1,t+1]
 
 
 End[]
