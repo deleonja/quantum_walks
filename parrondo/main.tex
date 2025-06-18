@@ -1,0 +1,99 @@
+\documentclass[10pt,letterpaper]{article} % {{{
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\graphicspath{{img/}}
+\usepackage{physics}
+\usepackage{bbm}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{float}
+
+\newcommand{\eref}[1]{eq.~(\ref{#1})} 
+\newcommand{\sref}[1]{sec.~\ref{#1}}
+\newcommand{\fref}[1]{Fig.~\ref{#1}}
+\newcommand{\tref}[1]{table~\ref{#1}}
+\newcommand{\Eref}[1]{Eq.~(\ref{#1})} 
+\newcommand{\Sref}[1]{Sec.~\ref{#1}}
+\newcommand{\Fref}[1]{Fig.~\ref{#1}}  
+\newcommand{\Tref}[1]{Table~\ref{#1}}
+
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=blue,      
+citecolor=blue,
+urlcolor=blue,
+pdftitle={},
+pdfauthor=author={Jose Alfredo de Leon},
+}
+
+\usepackage{tikz}
+
+\usepackage[mathlines]{lineno}  \linenumbers \setlength\linenumbersep{5pt}
+\usepackage[inline]{showlabels,rotating}
+\renewcommand{\showlabelrefline}{\hrule width 0pt height 3ex depth 0pt}
+\renewcommand{\showlabelfont}{\small\slshape\color{red!70}}
+\usepackage[draft,inline,nomargin]{fixme} \fxsetup{theme=color}
+\definecolor{jacolor}{RGB}{200,40,0} \FXRegisterAuthor{ja}{aja}{\color{jacolor}JA}
+\FXRegisterAuthor{cp}{acp}{\color{blue}CP}
+\FXRegisterAuthor{cd}{acd}{\color{purple}CD}
+
+\decimalpoint
+
+\newcommand{\mbZ}{\mathbb{Z}}
+\newcommand{\mcH}{\mathcal{H}}
+\newcommand{\mcD}{\mathcal{D}}
+\newcommand{\mcDPT}{\mathcal{D}^{T_B}}
+\newcommand{\mcG}{\mathcal{G}}
+\renewcommand{\H}{\h\in g}
+\def\bbra#1{\mathinner{\langle \! \langle{#1}|}}
+\def\kket#1{\mathinner{|{#1}\rangle \! \rangle}}
+\def\ddyada#1{\mathinner{|{#1}\rangle\!\rangle\!\langle\!\langle{#1}|}}
+\def\ddyad#1#2{\mathinner{|{#1}\rangle\!\rangle\!\langle\!\langle{#2}|}}
+\def\bbrakket#1#2{\mathinner{\langle\!\langle {#1}|{#2}\rangle\!\rangle}}
+\def\brakket#1#2{\mathinner{\langle {#1}|{#2}\rangle\!\rangle}}
+\def\bbraket#1#2{\mathinner{\langle\!\langle {#1}|{#2}\rangle}}
+\newcommand{\h}{\qty(m, n)}
+\newcommand{\vh}{\qty(\vec m,\vec n)}
+
+\newcommand{\one}{\mathbbm{1}}
+\newcommand{\mcF}{\mathcal{F}}
+
+\newtheorem{theorem}{Teorema}
+\newtheorem{proof}{Demostración}
+\newtheorem{hypothesis}{Hipótesis}
+
+\title{The simplest discrete-time quantum walk producing Parrondo's paradox}
+\author{}
+\date{Última actualización: \today}
+
+\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}}
+\renewcommand{\labelenumiii}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}}
+\renewcommand{\labelenumiv}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}.\arabic{enumiv}}
+
+\newcommand{\rhoel}[2]{\rho_{#1,#2} \dyad{#1}{#2}}
+\newcommand{\p}{p_{\text{error}}}
+
+\begin{document}
+\maketitle
+
+\begin{figure}
+\centering
+\includegraphics[width=0.37\textwidth]{figs/fixed_rotation_axes_bloch_sphere_01.pdf}
+\includegraphics[width=0.6\textwidth]{figs/fixed_rotation_axes_expval_01.pdf}
+\includegraphics[width=0.7\textwidth]{figs/fixed_rotation_axes_01.pdf}
+\caption{$\ket{\psi_0(\theta,\phi)} = \ket{\psi_0(0.5\pi, 0.26\pi)}$, 
+eje de rotación: $(\alpha, \phi) = (0.18\pi, 0)$}
+\end{figure}
+
+
+
+\bibliographystyle{unsrt}
+\bibliography{referencias.bib}
+\end{document}
