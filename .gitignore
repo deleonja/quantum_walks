@@ -362,3 +362,7 @@ Temporary Items
 ### cosas JA
 .notas_lun05ago.autosave.xopp
 # End of https://www.toptal.com/developers/gitignore/api/latex,macos,linux
+
+### Personal ###
+AmadoTemp/EPS/QMB.wl
+# End of Personal
