@@ -1,0 +1,63 @@
+\documentclass{beamer}
+\usetheme{metropolis} % O el que prefieras
+\usepackage{amsmath, amssymb}
+
+\title{Una caminata cuántica es un autómata celular cuántico (QCA)}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{¿Qué define a un QCA? (Axiomas de Schumacher-Werner)}
+Un autómata celular cuántico (QCA), satisface:
+  
+\begin{enumerate}
+  \item \textbf{Localidad:} El estado de una celda en $t+1$ solo depende de su vecindad en $t$.
+  
+  \item \textbf{Unitariedad.} La evolución está descrita por $U$ ($UU^\dagger=I$).
+  
+  \item \textbf{Homogeneidad:} Las reglas son las mismas en todo el espacio, i.e., $U$ tiene invarianza translacional.
+  
+  \item \textbf{Discretización:} El sistema vive en una red (espacio discreto) y evoluciona en pasos de tiempo definidos $\Delta t$.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Quantum Game of Life}
+  Un ejemplo de QCA...
+\end{frame}
+
+\begin{frame}{Caminata cuántica con 1 partícula}
+  XXZ en el subespacio de 1 partícula 
+\end{frame}
+
+\begin{frame}{}
+  El modelo XXZ original es continuo, pero un QCA es \textbf{discreto}.
+  
+  \begin{itemize}
+    \item \textbf{Hamiltoniano:} $H = \sum_{i} [ J(\sigma_i^x \sigma_{i+1}^x + \sigma_i^y \sigma_{i+1}^y) + \Delta \sigma_i^z \sigma_{i+1}^z ]$
+    \item \textbf{Discretización:} Dividimos el tiempo en pasos $\delta t$.
+    \item \textbf{Aproximación de Trotter:} 
+    $$U(\delta t) \approx e^{-i H_{odd} \delta t} e^{-i H_{even} \delta t} = U_{odd} U_{even}$$
+  \end{itemize}
+  
+  \textbf{Capa Par ($U_{even}$):} Interacciones en enlaces (1,2), (3,4)...
+  
+  \textbf{Capa Impar ($U_{odd}$):} Interacciones en enlaces (2,3), (4,1)...
+\end{frame}  
+
+\begin{frame}{4. La Matriz del "Ladrillo" $u$}
+  El operador de dos sitios $u = e^{-i H_{i,i+1} \delta t}$ en la base $\{|00\rangle, |01\rangle, |10\rangle, |11\rangle\}$:
+  $$u = \begin{pmatrix} 
+    e^{-i\Delta \delta t} & 0 & 0 & 0 \\ 
+    0 & \text{cos}\theta e^{i\phi} & -i\text{sin}\theta e^{i\phi} & 0 \\ 
+    0 & -i\text{sin}\theta e^{i\phi} & \text{cos}\theta e^{i\phi} & 0 \\ 
+    0 & 0 & 0 & e^{-i\Delta \delta t} 
+  \end{pmatrix}$$
+  \begin{itemize}
+    \item \textbf{Ceros:} Garantizan que el autómata conserva magnetización.
+    \item \textbf{Bloque Central:} Define la amplitud de probabilidad del "paso" en la caminata.
+  \end{itemize}
+\end{frame}
+\end{document}
